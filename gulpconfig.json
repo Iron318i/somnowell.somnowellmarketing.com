@@ -1,6 +1,6 @@
 {
   "browserSyncOptions": {
-    "proxy": "http://emerald.wwforever.com/",
+    "proxy": "http://somnowell.somnowellmarketing.com",
     "notify": false,
     "files": [
       "./css/*.min.css",
@@ -19,6 +19,6 @@
     "composer": "./vendor",
     "dev": "./src",
     "dist": "./dist/somnowell",
-    "distprod": "./dist-product"
+    "distprod": "./dist-product/somnowell"
   }
 }
