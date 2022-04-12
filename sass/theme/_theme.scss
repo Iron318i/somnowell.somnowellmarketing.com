@@ -1,0 +1,27 @@
+* {
+  outline: none !important;
+}
+a {
+  transition: all .3s ease;
+}
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 320px;
+  position: relative;
+  image-rendering: -moz-crisp-edges;
+}
+b, strong {
+  font-family: $headings-font-family;
+}
+svg.icon {
+  width: 1em;
+  height: 1em;
+}
+.invalid {
+  .form-control:invalid {
+    border-color: $primary;
+  }
+}

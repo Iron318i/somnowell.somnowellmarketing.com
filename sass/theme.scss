@@ -1,0 +1,13 @@
+@import "theme/rem";
+@import "theme/fonts";
+@import "theme/theme_variables";
+// <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or somnowell-theme variables here
+@import "assets/bootstrap5";
+// <-------- Loads Bootstrap4
+//@import "assets/owl.carousel";
+//@import "assets/jquery.fancybox";
+@import "theme/contact-form7";
+@import "theme/theme";
+@import "theme/header_footer";
+@import "theme/wp-classes";
+@import "theme/responsive";
