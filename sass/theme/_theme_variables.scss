@@ -5,16 +5,16 @@
 // Color system
 // scss-docs-start gray-color-variables
 $white: #fff; //
-$gray-100: #fcfcfc;
-$gray-200: #e1e1e1;
-$gray-300: #e7e7e7;
-$gray-400: #999999;
+$gray-100: #fcfcfc; //
+$gray-200: #e1e1e1; //
+$gray-300: #e7e7e7; //
+$gray-400: #999999; //
 $gray-500: #b5b5b5; //
-$gray-600: #666666;
-$gray-700: #333333;
-$gray-800: #2e2e2e;
-$gray-900: #232323;
-$black: #161616; //
+$gray-600: #666666; //
+$gray-700: #333333; //
+$gray-800: #2e2e2e; //
+$gray-900: #0d0d0d;
+$black: #000;
 // scss-docs-end gray-color-variables
 // fusv-disable
 // scss-docs-start gray-colors-map
@@ -22,22 +22,22 @@ $black: #161616; //
 // fusv-enable
 // scss-docs-start color-variables
 $dark-blue: #043970;
-$blue: #0ca7e2;
-$green: #51c419;
+$blue: #005b84;
+$blue-light: #0087bf;
 // scss-docs-end color-variables
 // scss-docs-start colors-map
 $colors: (
-        "green": $green,
+        "blue-light": $blue-light,
         "blue": $blue
 );
 // scss-docs-end colors-map
 // scss-docs-start theme-color-variables
-$primary: $green;
+$primary: $blue;
 // scss-docs-end theme-color-variables
 // scss-docs-start theme-colors-map
 $theme-colors: (
-        "primary": $green,
-        "info": $blue
+        "primary": $blue,
+        "info": $blue-light
 );
 // scss-docs-end theme-colors-map
 // scss-docs-start theme-colors-rgb
@@ -83,8 +83,8 @@ $spacers: (
 // Body
 //
 // Settings for the `<body>` element.
-$body-bg: $gray-100;
-$body-color: $gray-700;
+$body-bg: $white;
+$body-color: $gray-900;
 // Utilities maps
 // Links
 //
@@ -116,7 +116,7 @@ $container-max-widths: (
         sm: 570px,
         md: 750px,
         lg: 960px,
-        xl: 1232px
+        xl: 1214px
 );
 // scss-docs-end container-max-widths
 // Grid columns
@@ -149,16 +149,16 @@ $border-radius-lg: 0;
 // Font, line-height, and color for body text, headings, and more.
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-sans-serif: 'Roboto', Helvetica, sans-serif;
 // stylelint-enable value-keyword-case
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-weight-light: 300;
-$font-weight-base: 300;
+$font-weight-base: 400;
 $font-weight-bolder: 700;
-$line-height-base: 1.44;
-$h1-font-size: rem(31px);
-$h2-font-size: rem(31px);
+$line-height-base: 1.33;
+$h1-font-size: rem(30px);
+$h2-font-size: rem(30px);
 $h3-font-size: rem(26px);
 $h4-font-size: rem(21px);
 $h5-font-size: rem(15px);

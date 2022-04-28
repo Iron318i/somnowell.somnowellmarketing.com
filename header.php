@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
         <div class="container">
             <div class="logo-link">
                 <a href="<?php echo site_url() ?>" rel="home" class="main-logo">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/mainlogo.svg" alt="<?php bloginfo( 'name' ); ?>">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/main-logo.png" alt="<?php bloginfo( 'name' ); ?>">
                 </a>
             </div>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"

@@ -5,6 +5,9 @@
 @include media-breakpoint-only(lg) {
 }
 @include media-breakpoint-up(lg) {
+  html {
+    font-size: 18px;
+  }
 }
 @include media-breakpoint-up(xl) {
 }

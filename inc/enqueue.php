@@ -15,6 +15,7 @@ if ( ! function_exists( 'somnowell_scripts' ) ) {
 	 */
 	function somnowell_scripts() {
 		// Get the theme data.
+		wp_enqueue_style( 'fonts-styles', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap', [], null );
 		$the_theme     = wp_get_theme();
 		$theme_version = $the_theme->get( 'Version' );
 		$css_version   = $theme_version . '.' . filemtime( get_template_directory() . '/css/theme.min.css' );
