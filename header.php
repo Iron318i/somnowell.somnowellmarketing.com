@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 <body <?php body_class(); ?> <?php somnowell_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
             <div class="logo-link">
                 <a href="<?php echo site_url() ?>" rel="home" class="main-logo">

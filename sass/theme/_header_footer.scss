@@ -69,10 +69,6 @@
 .site-footer {
 }
 .copyright {
-  padding: rem(22px 0);
-  background-color: $gray-800;
-  color: $gray-600;
-  font-size: 13px;
 }
 #toTop {
   position: fixed;
@@ -106,6 +102,19 @@
 @include media-breakpoint-only(lg) {
 }
 @include media-breakpoint-up(xl) {
+  .site-header {
+    .logo-link {
+      width: rem(250px);
+    }
+    .navbar-collapse {
+      width: rem(845px);
+      flex-grow: unset;
+    }
+    #main-menu {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
 }
 @include media-breakpoint-down(md) {
 }

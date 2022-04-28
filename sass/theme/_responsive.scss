@@ -2,14 +2,21 @@
 }
 @include media-breakpoint-up(md) {
 }
-@include media-breakpoint-only(lg) {
-}
 @include media-breakpoint-up(lg) {
   html {
     font-size: 18px;
   }
 }
 @include media-breakpoint-up(xl) {
+  .wrapper {
+    justify-content: space-between;
+    .sidebar {
+      width: rem(280px);
+    }
+    .main-content {
+      width: rem(875px);
+    }
+  }
 }
 @include media-breakpoint-down(md) {
 }

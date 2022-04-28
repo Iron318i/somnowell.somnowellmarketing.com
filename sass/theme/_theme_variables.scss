@@ -116,7 +116,7 @@ $container-max-widths: (
         sm: 570px,
         md: 750px,
         lg: 960px,
-        xl: 1214px
+        xl: 1210px
 );
 // scss-docs-end container-max-widths
 // Grid columns
@@ -189,7 +189,7 @@ $input-btn-padding-y: rem(11.5px);
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
 // scss-docs-start btn-variables
-$btn-font-weight: 300;
+$btn-font-weight: 400;
 $btn-font-size: rem(19px);
 $btn-padding-y: rem(9.5px);
 $btn-padding-x: rem(35px);
@@ -226,7 +226,7 @@ $form-select-indicator-color: $primary;
 // scss-docs-end zindex-stack
 // Navs
 // scss-docs-start nav-variables
-$nav-link-font-size: rem(13px);
+$nav-link-font-size: rem(18px);
 $nav-link-font-weight: 400;
 // scss-docs-end nav-variables
 // Navbar
