@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: User Info
+  Template Name: Copiright Info
   Template Post Type: page
  */
 get_header();
