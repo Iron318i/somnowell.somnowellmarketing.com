@@ -7,9 +7,9 @@
 $white: #fff; //
 $gray-100: #fcfcfc; //
 $gray-200: #e1e1e1; //
-$gray-300: #e7e7e7; //
-$gray-400: #999999; //
-$gray-500: #b5b5b5; //
+$gray-300: #ececec;
+$gray-400: #7c7c7c;
+$gray-500: #737373;
 $gray-600: #666666; //
 $gray-700: #333333; //
 $gray-800: #2e2e2e; //
@@ -25,8 +25,8 @@ $black: #000;
 // scss-docs-start colors-map
 $blue-100: #a2e0ff;
 $blue-200: #99bdce; //
-$blue-300: #669db5; //
-$blue-400: #0dade8;
+$blue-300: #0dade8;
+$blue-400: #00a7db;
 $blue-500: #0087bf;
 $blue-600: #005b84;
 $blue-700: shade-color($blue-600, 40%);
