@@ -16,13 +16,13 @@ if ( fw_ext_page_builder_is_builder_post( get_the_ID() ) ) {
             <div class="row wrapper">
                 <div class="col-auto sidebar">
 					<?php
-					var_dump( get_page_template_slug() );
+					//var_dump( get_page_template_slug() );
 					switch ( get_page_template_slug() ) {
 						case 'page-templates/somnowell-range.php':
 							$theme_location = "somnowell-range";
 							break;
-						case 1:
-							echo "i равно 1";
+						case 'page-templates/footer-info.php':
+							$theme_location = "copyright";
 							break;
 						case 2:
 							echo "i равно 2";
@@ -31,7 +31,7 @@ if ( fw_ext_page_builder_is_builder_post( get_the_ID() ) ) {
 					wp_nav_menu(
 						array(
 							'theme_location' => $theme_location,
-							'menu_class'     => 'nav',
+							'menu_class'     => 'nav flex-column',
 						)
 					);
 					?>

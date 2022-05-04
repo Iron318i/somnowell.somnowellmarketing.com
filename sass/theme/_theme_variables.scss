@@ -21,23 +21,29 @@ $black: #000;
 // scss-docs-end gray-colors-map
 // fusv-enable
 // scss-docs-start color-variables
-$dark-blue: #043970;
-$blue: #005b84;
-$blue-light: #0087bf;
 // scss-docs-end color-variables
 // scss-docs-start colors-map
+$blue-100: #a2e0ff;
+$blue-200: #99bdce; //
+$blue-300: #669db5; //
+$blue-400: #0dade8;
+$blue-500: #0087bf;
+$blue-600: #005b84;
+$blue-700: shade-color($blue-600, 40%);
+$blue-800: shade-color($blue-600, 60%);
+$blue-900: shade-color($blue-600, 80%);
 $colors: (
-        "blue-light": $blue-light,
-        "blue": $blue
+        "blue": $blue-500
 );
 // scss-docs-end colors-map
 // scss-docs-start theme-color-variables
-$primary: $blue;
+$primary: $blue-600;
+$info: $blue-500;
 // scss-docs-end theme-color-variables
 // scss-docs-start theme-colors-map
 $theme-colors: (
-        "primary": $blue,
-        "info": $blue-light
+        "primary": $primary,
+        "info": $info
 );
 // scss-docs-end theme-colors-map
 // scss-docs-start theme-colors-rgb
@@ -90,6 +96,7 @@ $body-color: $gray-900;
 //
 //$link-color: $blue;
 // Style anchor elements.
+$link-color: $blue-500;
 $link-decoration: none;
 // Paragraphs
 //
@@ -247,7 +254,7 @@ $dropdown-color: $primary;
 $dropdown-item-padding-y: .5rem;
 $dropdown-item-padding-x: 1rem;
 $dropdown-border-radius: 0;
-$dropdown-bg: rgba($dark-blue, .96);
+$dropdown-bg: rgba($blue-600, .96);
 $dropdown-link-hover-bg: transparent;
 $dropdown-link-active-bg: transparent;
 $dropdown-link-color: #fff;
