@@ -70,8 +70,51 @@
   min-height: 445px;
   background: url(../img/footer-bg.png) 50% no-repeat;
   padding: 70px 0 30px;
+  color: #fff;
+  .nav {
+    a {
+      font-size: rem(16px);
+      color: #fff;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  .widget-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: rem(16px);
+    margin-bottom: .3rem;
+  }
+}
+#footer-info {
+  margin-top: 3rem;
+  margin-bottom: .8rem;
+  .sub-menu {
+    display: none;
+  }
+  li + li {
+    margin-left: (7px);
+    padding-left: rem(7px);
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: rem(14px);
+      width: 1px;
+      background-color: #fff;
+    }
+  }
+  a {
+    letter-spacing: -.02em;
+  }
 }
 .copyright {
+  color: #00a7db;
+  font-size: 14px;
 }
 #toTop {
   position: fixed;

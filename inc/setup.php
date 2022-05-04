@@ -48,7 +48,7 @@ if ( ! function_exists( 'somnowell_setup' ) ) {
 		register_nav_menus(
 			array(
 				'primary'         => __( 'Primary Menu', 'somnowell' ),
-				'copyright'       => __( 'Copyright', 'somnowell' ),
+				'copyright'       => __( 'Footer Info', 'somnowell' ),
 				'footer-1'        => __( 'Footer Patients', 'somnowell' ),
 				'footer-2'        => __( 'Footer Practitioners', 'somnowell' ),
 				'somnowell-range' => __( 'Somnowell Range', 'somnowell' ),
