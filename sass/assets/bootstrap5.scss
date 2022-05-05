@@ -7,6 +7,10 @@
 
 // scss-docs-start import-stack
 // Configuration
+@import "../src/sass/bootstrap5/functions";
+@import "../src/sass/bootstrap5/variables";
+@import "../src/sass/bootstrap5/mixins";
+@import "../src/sass/bootstrap5/utilities";
 
 // Layout & components
 @import "../../src/sass/bootstrap5/root";

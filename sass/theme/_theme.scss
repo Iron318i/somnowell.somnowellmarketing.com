@@ -25,8 +25,32 @@ svg.icon {
     border-color: $primary;
   }
 }
+.btn {
+  min-width: rem(300px);
+  text-transform: uppercase;
+}
+.btn-outline-info {
+  border-color: $blue-300;
+  color: #000000;
+  &:hover {
+    border-color: $blue-300;
+    background-color: $blue-300;
+    color: #fff;
+  }
+}
 .entry-content {
   h1, h2, h3 {
     color: $blue-500;
+  }
+}
+.wpcf7 {
+  padding: 30px 15px;
+  background-color: $gray-300;
+  margin-bottom: rem(14px);
+  h2, h3 {
+    color: $blue-600;
+  }
+  .row {
+    --bs-gutter-x: 0.77778rem;
   }
 }

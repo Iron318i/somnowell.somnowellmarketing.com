@@ -6,6 +6,9 @@
   html {
     font-size: 18px;
   }
+  .wpcf7 {
+    padding: rem(40px 80px 30px 45px);
+  }
 }
 @include media-breakpoint-up(xl) {
   .wrapper {

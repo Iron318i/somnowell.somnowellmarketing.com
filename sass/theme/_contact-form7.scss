@@ -23,7 +23,7 @@
   }
   .wpcf7-form-control-wrap {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: rem(12px);
   }
   .input-group > .wpcf7-form-control-wrap {
     position: relative;
@@ -49,9 +49,6 @@
   .wpcf7-spinner {
     position: absolute;
     display: block;
-  }
-  .btn {
-    width: 100%;
   }
   .form-label {
     span {
