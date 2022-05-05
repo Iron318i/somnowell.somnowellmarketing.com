@@ -1,16 +1,19 @@
 @include media-breakpoint-up(sm) {
 }
 @include media-breakpoint-up(md) {
+  html {
+    font-size: 16px;
+  }
 }
 @include media-breakpoint-up(lg) {
-  html {
-    font-size: 18px;
-  }
   .wpcf7 {
     padding: rem(40px 80px 30px 45px);
   }
 }
 @include media-breakpoint-up(xl) {
+  html {
+    font-size: 18px;
+  }
   .wrapper {
     justify-content: space-between;
     .sidebar {
