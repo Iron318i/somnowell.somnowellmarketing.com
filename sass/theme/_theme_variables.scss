@@ -5,7 +5,7 @@
 // Color system
 // scss-docs-start gray-color-variables
 $white: #fff; //
-$gray-100: #fcfcfc; //
+$gray-100: #f8f6f6;
 $gray-200: #e1e1e1; //
 $gray-300: #ececec;
 $gray-400: #7c7c7c;
@@ -246,15 +246,15 @@ $navbar-light-active-color: #020202;
 //
 // Dropdown menu container and contents.
 $dropdown-font-size: rem(16px);
-$dropdown-color: $primary;
+//$dropdown-color: $primary;
 $dropdown-item-padding-y: .5rem;
 $dropdown-item-padding-x: 1rem;
-$dropdown-border-radius: 0;
-$dropdown-bg: rgba($blue-600, .96);
-$dropdown-link-hover-bg: transparent;
-$dropdown-link-active-bg: transparent;
-$dropdown-link-color: #fff;
-$dropdown-link-hover-color: rgba(#fff, .7);
+//$dropdown-border-radius: 0;
+//$dropdown-bg: rgba($blue-600, .96);
+//$dropdown-link-hover-bg: transparent;
+//$dropdown-link-active-bg: transparent;
+//$dropdown-link-color: #fff;
+//$dropdown-link-hover-color: rgba(#fff, .7);
 // Pagination
 $pagination-border-color: #fff;
 $pagination-hover-bg: #fff;
