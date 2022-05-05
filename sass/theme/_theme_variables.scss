@@ -238,10 +238,11 @@ $navbar-toggler-focus-width: 0;
 $navbar-dark-color: $white;
 $navbar-nav-link-padding-x: rem(13.5px);
 $nav-link-padding-y: rem(4px);
-$nav-link-padding-x: 0;
+$nav-link-padding-x: 2px;
 $navbar-nav-link-padding-x: 0;
-$navbar-light-color: $gray-700;
-$navbar-light-active-color: #020202;
+$navbar-light-color: $black;
+$navbar-light-active-color: $black;
+$navbar-light-hover-color: $navbar-light-color;
 // Dropdowns
 //
 // Dropdown menu container and contents.

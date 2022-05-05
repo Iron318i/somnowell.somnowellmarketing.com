@@ -1,5 +1,30 @@
 /*Site-header*/
 .site-header {
+  .dropdown {
+    > .nav-link {
+      padding-right: 1rem;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330' fill='%2300a7db'%3E%3Cpath d='M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z'/%3E%3C/svg%3E%0A") right center / .65rem no-repeat;
+    }
+    &:hover {
+      > .dropdown-menu {
+        display: block;
+        .dropdown-menu {
+          top: 0;
+          left: 100%;
+        }
+      }
+    }
+  }
+  #main-menu > .menu-item {
+    position: relative;
+    border-bottom: 2px solid transparent;
+    &:hover, &.active {
+      border-color: $blue-500;
+    }
+    &.active {
+      font-weight: 500;
+    }
+  }
 }
 .navbar-toggler {
   border: 0 none;
@@ -79,7 +104,6 @@
       color: #000000;
       font-size: rem(16px);
       padding-left: rem(47px);
-      margin-right: 1rem;
       &:hover {
         color: $blue-500;
       }
@@ -98,14 +122,10 @@
     border: 1px solid #bababa;
     border-radius: 4px;
     padding: rem(8.5px 45px);
-    min-width: rem(280px);
     background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 45 30' enable-background='new 0 0 45 30' xml:space='preserve'%3E%3Cg%3E%3Cdefs%3E%3Crect id='SVGID_1_' width='45' height='30'/%3E%3C/defs%3E%3CclipPath id='SVGID_2_'%3E%3Cuse xlink:href='%23SVGID_1_' overflow='visible'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23SVGID_2_)'%3E%3Cpath fill='%23012169' d='M0,0v30h45V0H0z'/%3E%3Cpath stroke='%23FFFFFF' stroke-width='6' d='M0,0l45,30 M45,0L0,30'/%3E%3Cg%3E%3Cdefs%3E%3Cpolygon id='SVGID_3_' points='22.5,15 45,15 45,30 22.5,30 0,30 0,15 0,0 22.5,0 45,0 '/%3E%3C/defs%3E%3CclipPath id='SVGID_4_'%3E%3Cuse xlink:href='%23SVGID_3_' overflow='visible'/%3E%3C/clipPath%3E%3Cpath clip-path='url(%23SVGID_4_)' stroke='%23C8102E' stroke-width='4' d='M0,0l45,30 M45,0L0,30'/%3E%3C/g%3E%3Cpath stroke='%23FFFFFF' stroke-width='10' d='M22.5,0v30 M0,15h45'/%3E%3Cpath stroke='%23C8102E' stroke-width='6' d='M22.5,0v30 M0,15h45'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330' fill='%2300a7db'%3E%3Cpath d='M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z'/%3E%3C/svg%3E%0A");
     background-size: rem(25px 17px), .7rem;
     background-position: 10px center, calc(100% - 18px) center;
     background-repeat: no-repeat, no-repeat;
-  }
-  .dropdown-menu {
-    min-width: rem(280px);
   }
 }
 .site-footer {
@@ -204,6 +224,9 @@
   }
 }
 @include media-breakpoint-up(sm) {
+  .top-bar .links a {
+    margin-right: 1rem;
+  }
   #footer-info {
     li + li {
       margin-left: (7px);
@@ -222,7 +245,26 @@
     }
   }
 }
+@include media-breakpoint-only(md) {
+  .site-header {
+    .nav-link {
+      font-size: .9rem;
+    }
+  }
+}
 @include media-breakpoint-up(md) {
+  .site-header {
+    #main-menu {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .logo-link {
+      padding-right: 1rem;
+      img {
+        width: 130px;
+      }
+    }
+  }
 }
 @include media-breakpoint-only(lg) {
   .site-footer {
@@ -235,6 +277,21 @@
   }
 }
 @include media-breakpoint-up(lg) {
+  .top-bar {
+    .dropdown-toggle {
+      min-width: rem(280px);
+    }
+    .dropdown-menu {
+      min-width: rem(280px);
+    }
+  }
+  .site-header {
+    .logo-link {
+      img {
+        width: 190px;
+      }
+    }
+  }
   .site-footer {
     padding: rem(70px 0 30px);
     min-height: rem(445px);
@@ -287,14 +344,17 @@
   .site-header {
     .logo-link {
       width: rem(250px);
+      padding-right: 0;
+      img {
+        width: 247px;
+      }
     }
     .navbar-collapse {
       width: rem(845px);
       flex-grow: unset;
     }
-    #main-menu {
-      width: 100%;
-      justify-content: space-between;
+    #main-menu > .menu-item {
+      padding-bottom: 9px;
     }
   }
   .site-footer {
@@ -324,6 +384,15 @@
   }
 }
 @include media-breakpoint-down(sm) {
+  .main-logo {
+    display: inline-block;
+    max-width: 50vw;
+  }
+  .top-bar {
+    .links a span {
+      display: none;
+    }
+  }
   .site-footer {
     .widget-title {
       font-size: 1.2rem;

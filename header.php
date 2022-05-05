@@ -22,8 +22,8 @@ defined( 'ABSPATH' ) || exit;
     <div class="container">
         <div class="row">
             <div class="col-auto links">
-                <a href="tel:+44(0)2081230432" class="i-phone">+44 (0) 20 8123 0432</a>
-                <a href="mailto:info@somnowell.com" class="i-email">info@somnowell.com</a>
+                <a href="tel:+44(0)2081230432" class="i-phone">&nbsp;<span>+44 (0) 20 8123 0432</span></a>
+                <a href="mailto:info@somnowell.com" class="i-email">&nbsp;<span>info@somnowell.com</span></a>
             </div>
             <div class="col-auto">
                 <div class="dropdown">
