@@ -67,9 +67,8 @@
   }
 }
 .site-footer {
-  min-height: 445px;
-  background-color: $blue-500;
-  padding: 70px 0 30px;
+  background: linear-gradient(180deg, #017bb0 0%, #093259 100%);
+  padding: rem(30px 0 30px);
   color: #fff;
   .nav {
     a {
@@ -106,23 +105,13 @@
     text-align: center;
   }
   .col-brochure {
-    position: relative;
-    z-index: 1;
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: -8%;
-      left: 8%;
-      bottom: 0;
-      background: url("../img/brochure-bg.png") top right / 310px 273px no-repeat;
-    }
     .btn-wrp {
-      margin-top: rem(106px);
+      margin-top: rem(30px);
       .btn {
         width: 100%;
+        min-width: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
         color: $blue-300;
         &:hover {
           color: #fff;
@@ -136,25 +125,10 @@
   }
 }
 #footer-info {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: .5rem;
   .sub-menu {
     display: none;
-  }
-  li + li {
-    margin-left: (7px);
-    padding-left: rem(7px);
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      height: rem(14px);
-      width: 1px;
-      background-color: #fff;
-    }
   }
   a {
     letter-spacing: -.013em;
@@ -188,6 +162,23 @@
   }
 }
 @include media-breakpoint-up(sm) {
+  #footer-info {
+    li + li {
+      margin-left: (7px);
+      padding-left: rem(7px);
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: rem(14px);
+        width: 1px;
+        background-color: #fff;
+      }
+    }
+  }
 }
 @include media-breakpoint-up(md) {
 }
@@ -203,7 +194,9 @@
 }
 @include media-breakpoint-up(lg) {
   .site-footer {
-    background: #fff url(../img/footer-bg.png) 50% no-repeat;
+    padding: rem(70px 0 30px);
+    min-height: rem(445px);
+    background: #fff url(../img/footer-bg.png) center top no-repeat;
     #footer-2 {
       min-width: rem(190px);
     }
@@ -221,6 +214,27 @@
     }
     .social {
       margin: 1.5rem 0 0 auto;
+    }
+    .col-brochure {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url("../img/brochure-bg.png") top right / 310px 273px no-repeat;
+      }
+      .btn-wrp {
+        margin-top: rem(106px);
+      }
+    }
+    .brochure-img {
+      display: none;
     }
   }
   #footer-info {
@@ -245,12 +259,54 @@
     .col-logo {
       width: 40%;
     }
+    .col-brochure {
+      &:before {
+        right: -8%;
+        left: 8%;
+      }
+    }
   }
   #footer-info {
     margin-top: 5rem;
   }
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
+  .col-brochure {
+    margin-bottom: 2rem;
+  }
+  #footer-info {
+    justify-content: center;
+  }
+  .copyright {
+    text-align: center;
+  }
 }
 @include media-breakpoint-down(sm) {
+  .site-footer {
+    .widget-title {
+      font-size: 1.2rem;
+    }
+    .col-logo {
+      margin-top: 2rem;
+    }
+    .nav {
+      li {
+        margin-bottom: .5rem;
+      }
+      a {
+        font-size: 1.1rem;
+      }
+    }
+    #footer-info {
+      justify-content: start;
+      margin-left: -10px;
+      margin-right: -10px;
+      .menu-item {
+        flex: 0 0 auto;
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
 }
