@@ -167,7 +167,7 @@ $line-height-base: 1.33;
 $h1-font-size: rem(30px);
 $h2-font-size: rem(30px);
 $h3-font-size: rem(26px);
-$h4-font-size: rem(21px);
+$h4-font-size: rem(20px);
 $h5-font-size: rem(15px);
 // scss-docs-end font-variables
 // scss-docs-start font-sizes
@@ -199,7 +199,7 @@ $input-btn-padding-y: rem(12px);
 $btn-font-weight: 500;
 $btn-font-size: rem(16px);
 $btn-padding-y: rem(12.4px);
-$btn-padding-x: rem(35px);
+$btn-padding-x: rem(15px);
 $btn-border-width: 2px;
 //$btn-border-width: 0;
 // Allows for customizing button radius independently from global border radius
@@ -272,6 +272,7 @@ $card-cap-padding-x: 1rem;
 $card-spacer-y: 1rem;
 $card-spacer-x: 1rem;
 $card-border-color: #e2e8ec;
+$card-bg: $gray-300;
 // scss-docs-end card-variables
 // Accordion
 $accordion-bg: $gray-100;

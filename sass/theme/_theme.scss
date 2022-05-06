@@ -26,8 +26,10 @@ svg.icon {
   }
 }
 .btn {
-  min-width: rem(300px);
   text-transform: uppercase;
+}
+.main-content .btn {
+  min-width: rem(300px);
 }
 .btn-outline-info {
   border-color: $blue-300;
@@ -103,6 +105,9 @@ svg.icon {
     text-align: center;
     padding: rem(17px 5px);
     margin-bottom: 7px;
+  }
+  .card-title {
+    color: $blue-600;
   }
 }
 .text-block {

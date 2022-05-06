@@ -15,6 +15,11 @@ defined( 'ABSPATH' ) || exit;
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php wp_head(); ?>
+    <!-- Calendly badge widget begin -->
+    <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/lucie-ash/20min', text: 'Schedule time with me', color: '#00a2ff', branding: true});</script>
+    <!-- Calendly badge widget end -->
 </head>
 <body <?php body_class(); ?> <?php somnowell_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>

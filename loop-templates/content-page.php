@@ -13,24 +13,15 @@ defined( 'ABSPATH' ) || exit;
         <div class="row wrapper">
             <div class="col-auto sidebar">
 				<?php
-				//var_dump( get_page_template_slug() );
-				switch ( get_page_template_slug() ) {
-					case 'page-templates/somnowell-range.php':
-						$theme_location = "somnowell-range";
-						break;
-					case 'page-templates/footer-info.php':
-						$theme_location = "copyright";
-						break;
-					case 2:
-						echo "i равно 2";
-						break;
-				};
-				wp_nav_menu(
-					array(
-						'theme_location' => $theme_location,
-						'menu_class'     => 'nav flex-column',
-					)
-				);
+				get_template_part( 'template-parts/sidebar', 'menu' );
+				$sidebar_banners = fw_get_db_post_option( get_the_ID(), 'banners' );
+				var_dump( $sidebar_banners );
+				if ( isset( $sidebar_banners["avards"] ) ) {
+					get_template_part( 'template-parts/sidebar', 'awards' );
+				}
+				if ( isset( $sidebar_banners["schedule-call"] ) ) {
+					get_template_part( 'template-parts/sidebar', 'call' );
+				}
 				?>
             </div>
             <div class="col-auto main-content">
