@@ -168,7 +168,7 @@ $h1-font-size: rem(24px);
 $h2-font-size: rem(24px);
 $h3-font-size: rem(22px);
 $h4-font-size: rem(20px);
-$h5-font-size: rem(15px);
+$h5-font-size: rem(18px);
 // scss-docs-end font-variables
 // scss-docs-start font-sizes
 // scss-docs-end font-sizes
@@ -180,8 +180,13 @@ $headings-font-weight: 700;
 // scss-docs-start display-headings
 // scss-docs-end display-headings
 // scss-docs-start type-variables
+$hr-margin-y: .5rem;
+$hr-color: $blue-500;
+$hr-height: 2px;
+$hr-opacity: 1;
 // scss-docs-end type-variables
 // Tables
+$table-border-width: 0;
 $table-striped-bg: $gray-100;
 $table-striped-order: even;
 $table-border-color: #e8e8e8;

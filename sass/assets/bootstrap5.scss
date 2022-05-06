@@ -20,7 +20,7 @@ $theme-colors: map-remove($theme-colors, "secondary", "success", "light", "warni
 @import "../../src/sass/bootstrap5/images";
 @import "../../src/sass/bootstrap5/containers";
 @import "../../src/sass/bootstrap5/grid";
-//@import "../../src/sass/bootstrap5/tables";
+@import "../../src/sass/bootstrap5/tables";
 @import "../../src/sass/bootstrap5/forms";
 @import "../../src/sass/bootstrap5/buttons";
 @import "../../src/sass/bootstrap5/transitions";

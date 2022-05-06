@@ -139,3 +139,38 @@ svg.icon {
     }
   }
 }
+.img-box {
+  &.full {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.table {
+  td, th {
+    vertical-align: middle;
+  }
+  font-size: 14px;
+  td:first-child {
+    font-size: rem(16px);
+    color: $blue-600;
+  }
+  .heading {
+    td, th {
+      border-bottom: 1px dashed #aeaeae;
+    }
+  }
+  tbody {
+    th {
+      font-size: rem(16px);
+      color: $blue-600;
+    }
+  }
+  .check {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/check.png) 50% / contain no-repeat;
+  }
+}
