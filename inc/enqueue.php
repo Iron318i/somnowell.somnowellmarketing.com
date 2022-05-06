@@ -39,3 +39,11 @@ function deregister_styles() {
 	wp_deregister_style( 'contact-form-7-bootstrap-style' );
 	wp_deregister_style( 'frontend_inline_style' );
 }
+
+function wps_deregister_styles() {
+	wp_dequeue_style( 'global-styles' );
+}
+
+add_action( 'wp_enqueue_scripts', 'wps_deregister_styles', 100 );
+
+remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
