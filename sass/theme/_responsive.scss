@@ -1,9 +1,6 @@
 @include media-breakpoint-up(sm) {
 }
 @include media-breakpoint-up(md) {
-  html {
-    font-size: 16px;
-  }
   .wrapper {
     .sidebar {
       width: 30%;
@@ -14,6 +11,9 @@
   }
 }
 @include media-breakpoint-up(lg) {
+  html {
+    font-size: 16px;
+  }
   .wpcf7 {
     padding: rem(40px 80px 30px 45px);
   }

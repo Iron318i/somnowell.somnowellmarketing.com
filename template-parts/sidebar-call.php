@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 <div class="card">
-	<?php echo wp_get_attachment_image( 129, 'medium', false, array( "class" => 'card-img-to' ) ); ?>
+	<?php echo wp_get_attachment_image( 129, 'full', false, array( "class" => 'card-img-to' ) ); ?>
     <div class="card-body">
         <h4 class="card-title">Speak with our team of Somnowell Experts Today! </h4>
         <p class="card-text">Find out if you may be suitable for the Somnowell device for snoring and sleep apnoea.</p>

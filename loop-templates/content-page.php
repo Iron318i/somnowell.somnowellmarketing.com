@@ -10,7 +10,15 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <div class="container pt-1 pb-3">
     <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-        <div class="row wrapper">
+        <div class="row wrapper flex-md-row-reverse">
+            <div class="col-auto main-content">
+                <div class="entry-content">
+					<?php the_content(); ?>
+                </div>
+                <footer class="entry-footer">
+					<?php edit_post_link( __( 'Edit', 'mrprime' ), '<span class="edit-link">', '</span>' ); ?>
+                </footer>
+            </div>
             <div class="col-auto sidebar">
 				<?php
 				get_template_part( 'template-parts/sidebar', 'menu' );
@@ -25,14 +33,6 @@ defined( 'ABSPATH' ) || exit;
 					get_template_part( 'template-parts/sidebar', 'test' );
 				}
 				?>
-            </div>
-            <div class="col-auto main-content">
-                <div class="entry-content">
-					<?php the_content(); ?>
-                </div>
-                <footer class="entry-footer">
-					<?php edit_post_link( __( 'Edit', 'mrprime' ), '<span class="edit-link">', '</span>' ); ?>
-                </footer>
             </div>
         </div>
     </article><!-- #post-## -->
