@@ -5,6 +5,7 @@
  * @package somnowell-theme
  */
 // Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 ?>
 <svg width="0" height="0" class="d-none">
     <symbol xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 479.9 479.9" id="facebook-icon">
