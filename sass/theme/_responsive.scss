@@ -4,15 +4,40 @@
   html {
     font-size: 16px;
   }
+  .wrapper {
+    .sidebar {
+      width: 30%;
+    }
+    .main-content {
+      width: 70%;
+    }
+  }
 }
 @include media-breakpoint-up(lg) {
   .wpcf7 {
     padding: rem(40px 80px 30px 45px);
   }
+  .wrapper {
+    .sidebar {
+      width: 24%;
+    }
+    .main-content {
+      width: 76%;
+    }
+  }
 }
 @include media-breakpoint-up(xl) {
   html {
     font-size: 18px;
+  }
+  h1, .h1, h2, .h2 {
+    font-size: 30px;
+  }
+  h3, .h3 {
+    font-size: 26px;
+  }
+  .fsz-24 {
+    font-size: rem(24px);
   }
   .wrapper {
     justify-content: space-between;
