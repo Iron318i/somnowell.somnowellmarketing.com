@@ -220,3 +220,24 @@ svg.icon {
     background: #127aa1 url(../img/banner-small-find.jpg) right center / cover no-repeat;
   }
 }
+.styled {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  li {
+    margin-bottom: .5rem;
+    padding-left: rem(27px);
+    background: url(../img/check.png) 0 6px / 12px no-repeat;
+  }
+}
+.recommended-by {
+  .styled {
+    max-width: 37rem;
+  }
+  .row {
+    align-items: center;
+  }
+  h6 {
+    color: $gray-500;
+  }
+}
