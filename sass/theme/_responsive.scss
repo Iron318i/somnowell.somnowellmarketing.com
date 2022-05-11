@@ -49,6 +49,9 @@
       padding-right: rem(50px);
     }
   }
+  .banner-small {
+    padding-left: rem(45px);
+  }
 }
 @include media-breakpoint-up(xl) {
   html {
