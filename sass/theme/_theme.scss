@@ -56,6 +56,9 @@ svg.icon {
     --bs-gutter-x: 0.77778rem;
   }
 }
+.fsz-13 {
+  font-size: 13px;
+}
 .fsz-24 {
   font-size: rem(20px);
 }
@@ -171,7 +174,7 @@ svg.icon {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: url(../img/check.png) 50% / contain no-repeat;
+    background: url($check-positive) 50% / contain no-repeat;
   }
 }
 .banner-speak {
@@ -227,10 +230,27 @@ svg.icon {
   li {
     margin-bottom: .5rem;
     padding-left: rem(27px);
-    background: url(../img/check.png) 0 6px / 12px no-repeat;
+    background: url($check-positive) 0 6px / 12px no-repeat;
+  }
+  &.negative {
+    li {
+      background-image: url($check-negative);
+    }
+  }
+  &.wrap {
+    background-color: $gray-100;
+    padding: rem(14px);
+    border-radius: rem(7px);
+    a {
+      border-bottom: 1px solid $link-color;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .recommended-by {
+  margin-bottom: 2rem;
   .styled {
     max-width: 37rem;
   }

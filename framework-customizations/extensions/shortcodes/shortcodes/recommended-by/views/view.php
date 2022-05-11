@@ -8,7 +8,7 @@ if ( ! defined( 'FW' ) ) {
  * @var array $atts
  */
 ?>
-<div class="recommended-by mb-1">
+<div class="recommended-by">
     <h2><?php echo $atts['heading'] ?></h2>
     <ul class="styled two-cols">
 		<?php foreach ( $atts['list'] as $value ) { ?>

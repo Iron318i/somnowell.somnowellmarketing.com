@@ -16,6 +16,7 @@ $options = array(
 		'label'   => __( 'Fonte Size', 'fw' ),
 		'choices' => array(
 			''       => '18px',
+			'fsz-13' => '13px',
 			'fsz-16' => '16px',
 			'fsz-24' => '24px',
 		)
