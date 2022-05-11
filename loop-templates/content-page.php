@@ -32,6 +32,9 @@ defined( 'ABSPATH' ) || exit;
 				if ( isset( $sidebar_banners["take-test"] ) ) {
 					get_template_part( 'template-parts/sidebar', 'test' );
 				}
+				if ( isset( $sidebar_banners["find-practioner"] ) ) {
+					get_template_part( 'template-parts/sidebar', 'practioner' );
+				}
 				?>
             </div>
         </div>

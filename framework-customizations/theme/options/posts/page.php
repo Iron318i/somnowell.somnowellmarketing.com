@@ -12,9 +12,10 @@ $options = array(
 				'type'    => 'checkboxes',
 				'label'   => false,
 				'choices' => array(
-					'avards'        => __( 'Awards' ),
-					'schedule-call' => __( 'Schedule a call' ),
-					'take-test'     => __( 'Take The Test', '{domain}' ),
+					'avards'          => __( 'Awards' ),
+					'schedule-call'   => __( 'Schedule a call' ),
+					'take-test'       => __( 'Take The Test', '{domain}' ),
+					'find-practioner' => __( 'Find a practitioner', '{domain}' ),
 				),
 			),
 		),
