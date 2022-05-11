@@ -9,6 +9,11 @@ $options = array(
 		'label' => __( 'Choose Image', 'fw' ),
 		'desc'  => __( 'Either upload a new, or choose an existing image from your media library', 'fw' )
 	),
+	'image_mobile'  => array(
+		'type'  => 'upload',
+		'label' => __( 'Choose Mobile Image (545px)', 'fw' ),
+		'desc'  => __( 'Either upload a new, or choose an existing image from your media library', 'fw' )
+	),
 	'image_size'    => array(
 		'type'    => 'select',
 		'label'   => __( 'Image Size', 'fw' ),

@@ -1,3 +1,20 @@
+@media (min-width: 481px) {
+  .banner-speak {
+    .row {
+      flex-direction: row-reverse;
+    }
+    .col-text {
+      width: calc(100% - 13.5rem);
+    }
+    .col-img {
+      width: 13.5rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
 @include media-breakpoint-up(sm) {
 }
 @include media-breakpoint-up(md) {
@@ -23,6 +40,13 @@
     }
     .main-content {
       width: 76%;
+    }
+  }
+  .banner-speak {
+    .btn-wrp,
+    .text-wrp {
+      padding-left: rem(50px);
+      padding-right: rem(50px);
     }
   }
 }

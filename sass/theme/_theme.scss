@@ -174,3 +174,30 @@ svg.icon {
     background: url(../img/check.png) 50% / contain no-repeat;
   }
 }
+.banner-speak {
+  margin-bottom: 1rem;
+  .text-wrp {
+    background-color: $gray-300;
+    padding: 1rem;
+    h4 {
+      font-size: rem(22px);
+      color: $blue-600;
+      margin-bottom: 0.3rem;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  }
+  .btn-wrp {
+    background-color: #dddddd;
+    padding: rem(8px 18px 12px 18px);
+  }
+  .btn {
+    min-width: rem(240px);
+    background-color: #ececec;
+    &:hover {
+      background-color: $blue-300;
+    }
+  }
+}
