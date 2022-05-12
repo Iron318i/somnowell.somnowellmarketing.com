@@ -291,6 +291,14 @@ svg.icon {
     border-top: 2px solid $blue-500;
     margin-top: 1.5rem;
   }
+  .content {
+    align-self: center;
+  }
+  .avatar {
+    img {
+      border-radius: 50%;
+    }
+  }
 }
 .testimonial-small {
   border-bottom: 1px dashed #aeaeae;
