@@ -47,3 +47,10 @@ function wps_deregister_styles() {
 add_action( 'wp_enqueue_scripts', 'wps_deregister_styles', 100 );
 
 remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
+
+add_action( 'admin_enqueue_scripts', 'my_admin_theme_style' );
+add_action( 'login_enqueue_scripts', 'my_admin_theme_style' );
+
+function my_admin_theme_style() {
+	wp_enqueue_style( 'wp_admin_css', get_template_directory_uri() . '/css/admin-style.css' );
+}

@@ -85,6 +85,22 @@
   .card-body {
     padding: rem(18px 34px 30px);
   }
+  .testimonial-full {
+    .avatar {
+      width: 21%;
+    }
+    .content {
+      width: 79%;
+    }
+  }
+  .testimonial-small {
+    .icon-wrp {
+      width: 14%;
+    }
+    .content {
+      width: 86%;
+    }
+  }
 }
 @include media-breakpoint-down(md) {
 }

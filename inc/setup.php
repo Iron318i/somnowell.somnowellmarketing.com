@@ -112,3 +112,5 @@ if ( ! function_exists( 'somnowell_custom_excerpt_more' ) ) {
 	}
 
 }
+
+add_image_size( 'avatar', 154, 154, array( 'center', 'center' ) );

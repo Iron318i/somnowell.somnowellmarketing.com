@@ -261,3 +261,44 @@ svg.icon {
     color: $gray-500;
   }
 }
+.testimonials {
+  margin-bottom: 1rem;
+  .icon {
+    font-size: rem(32px);
+  }
+  .author-name {
+    font-weight: 400;
+    font-size: 16px;
+    color: $gray-500;
+  }
+}
+.testimonial-full {
+  padding: 1rem 0 .5rem;
+  .heading {
+    background: linear-gradient(#ffffff 0%, #ffffff 49%, $gray-500 50%, $gray-500 51%, #ffffff 52%, #ffffff 100%);
+    margin-bottom: 1rem;
+  }
+  .author-name {
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-right: rem(15px);
+    .icon {
+      margin-right: 1rem;
+    }
+  }
+  + .testimonial-small {
+    border-top: 2px solid $blue-500;
+    margin-top: 1.5rem;
+  }
+}
+.testimonial-small {
+  border-bottom: 1px dashed #aeaeae;
+  padding: 1.5rem 0 .5rem;
+  .icon-wrp {
+    text-align: center;
+    .icon {
+      margin-top: 2.3rem;
+    }
+  }
+}
