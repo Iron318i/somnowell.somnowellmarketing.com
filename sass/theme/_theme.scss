@@ -44,6 +44,9 @@ svg.icon {
   h1, h2, h3 {
     color: $blue-500;
   }
+  h2 {
+    font-weight: 500;
+  }
 }
 .wpcf7 {
   padding: 30px 15px;
@@ -118,6 +121,18 @@ svg.icon {
   }
   .card-title {
     color: $blue-600;
+  }
+}
+.fw-heading {
+  &.line {
+    background: linear-gradient(#ffffff 0%, #ffffff 48%, $blue-500 49%, $blue-500 52%, #ffffff 53%, #ffffff 100%);
+    margin-bottom: 1rem;
+    .fw-special-title {
+      display: inline-block;
+      margin-bottom: 0;
+      background-color: #fff;
+      padding-right: rem(20px);
+    }
   }
 }
 .text-block {
