@@ -7,7 +7,7 @@ if ( ! defined( 'FW' ) ) {
 $cfg = array();
 
 $cfg['page_builder'] = array(
-	'title'      => __( 'Features & benefits table', 'fw' ),
-	'tab'        => __( 'Template Parts', 'fw' ),
+	'title'      => __( 'Features & benefits', 'fw' ),
+	'tab'        => __( 'Tables', 'fw' ),
 	'popup_size' => 'medium'
 );

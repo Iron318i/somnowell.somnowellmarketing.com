@@ -7,8 +7,8 @@ if ( ! defined( 'FW' ) ) {
 	<?php foreach ( fw_akg( 'testimonials', $atts, array() ) as $testimonial ): ?>
 		<?php if ( ! empty( $testimonial['author_avatar'] ) ): ?>
             <div class="testimonial-full">
-                <div class="heading">
-                    <h5 class="author-name">
+                <div class="info-heading">
+                    <h5 class="title">
                         <svg class="icon">
                             <use xlink:href="#quote"></use>
                         </svg>
