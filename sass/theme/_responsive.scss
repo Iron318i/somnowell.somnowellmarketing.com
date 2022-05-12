@@ -98,6 +98,13 @@
       width: 86%;
     }
   }
+  .accordion-button {
+    padding: 1.4rem 0;
+    &:after {
+      padding-left: 4rem;
+      background-position: right center;
+    }
+  }
 }
 @include media-breakpoint-down(md) {
 }
