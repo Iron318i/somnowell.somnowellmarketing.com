@@ -186,11 +186,17 @@ svg.icon {
       color: $blue-600;
     }
   }
-  .check {
+  .check,
+  .check-no {
     display: inline-block;
     width: 12px;
     height: 12px;
+  }
+  .check {
     background: url($check-positive) 50% / contain no-repeat;
+  }
+  .check-no {
+    background: url($check-negative) 50% / contain no-repeat;
   }
 }
 .table-bordered {
