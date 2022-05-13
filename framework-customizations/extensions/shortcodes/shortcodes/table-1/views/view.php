@@ -11,7 +11,7 @@ if ( ! defined( 'FW' ) ) {
 <h5 class="text-info">COMPARISON TABLE</h5>
 <hr>
 <div class="table-responsive">
-    <table class="table">
+    <table class="table table-borderless">
         <thead>
         <tr>
             <th scope="col"></th>

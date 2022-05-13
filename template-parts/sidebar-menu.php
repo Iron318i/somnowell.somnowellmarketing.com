@@ -10,6 +10,9 @@ switch ( get_page_template_slug() ) {
 	case 'page-templates/somnowell-range.php':
 		$theme_location = "somnowell-range";
 		break;
+	case 'page-templates/for-practitioners.php':
+		$theme_location = "for-practitioners";
+		break;
 	case 'page-templates/footer-info.php':
 		$theme_location = "copyright";
 		break;

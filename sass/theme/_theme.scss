@@ -170,6 +170,7 @@ svg.icon {
     vertical-align: middle;
   }
   font-size: 14px;
+  th:first-child,
   td:first-child {
     font-size: rem(16px);
     color: $blue-600;
@@ -190,6 +191,11 @@ svg.icon {
     width: 12px;
     height: 12px;
     background: url($check-positive) 50% / contain no-repeat;
+  }
+}
+.table-bordered {
+  > :not(:first-child) {
+    border-top: 0 none;
   }
 }
 .banner-speak {
@@ -363,5 +369,36 @@ svg.icon {
     padding-top: 10vw;
     max-width: rem(570px);
     color: #fff;
+  }
+}
+#content {
+  .asp_product_item {
+    border: 0 none;
+    padding: 0;
+    box-shadow: none;
+    margin: 0 !important;
+    .asp_product_item_top {
+      display: none;
+    }
+    .asp_product_description {
+      display: none;
+    }
+    .asp_price_container {
+      display: none;
+    }
+    .asp_product_buy_btn {
+      background: $primary !important;
+      box-shadow: none !important;
+      color: #fff !important;
+      text-shadow: none !important;
+      font-family: $font-family-sans-serif !important;
+      text-transform: uppercase !important;
+      font-weight: $btn-font-weight !important;
+      line-height: $btn-line-height !important;
+      border: 2px solid $primary !important;
+      padding: 0.68889rem 1rem !important;
+      font-size: .88889rem !important;
+      height: auto !important;
+    }
   }
 }
