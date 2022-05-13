@@ -386,7 +386,12 @@ svg.icon {
     .asp_price_container {
       display: none;
     }
+    .asp_product_buy_btn_container {
+      display: block;
+    }
     .asp_product_buy_btn {
+      display: block !important;
+      width: 100%;
       background: $primary !important;
       box-shadow: none !important;
       color: #fff !important;
@@ -396,7 +401,7 @@ svg.icon {
       font-weight: $btn-font-weight !important;
       line-height: $btn-line-height !important;
       border: 2px solid $primary !important;
-      padding: 0.68889rem 1rem !important;
+      padding: 0.68rem 1rem !important;
       font-size: .88889rem !important;
       height: auto !important;
     }
