@@ -353,3 +353,15 @@ svg.icon {
     padding-left: rem(45px);
   }
 }
+.main-banner {
+  min-height: vw(1178px);
+  background: url(../img/main-banner-lg.jpg) top center / cover no-repeat;
+  h1 {
+    font-weight: 500;
+  }
+  .text {
+    padding-top: 10vw;
+    max-width: rem(570px);
+    color: #fff;
+  }
+}

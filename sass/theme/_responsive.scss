@@ -56,6 +56,11 @@
   .banner-small {
     padding-left: rem(45px);
   }
+  .main-banner {
+    h1 {
+      font-size: rem(44px);
+    }
+  }
 }
 @include media-breakpoint-up(xl) {
   html {
