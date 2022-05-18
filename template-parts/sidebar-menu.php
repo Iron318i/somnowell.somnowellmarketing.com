@@ -16,6 +16,9 @@ switch ( get_page_template_slug() ) {
 	case 'page-templates/footer-info.php':
 		$theme_location = "copyright";
 		break;
+	case 'page-templates/contact.php':
+		$theme_location = "contact";
+		break;
 	case 2:
 		echo "i равно 2";
 		break;

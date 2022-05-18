@@ -53,6 +53,7 @@ if ( ! function_exists( 'somnowell_setup' ) ) {
 				'footer-2'          => __( 'Footer Practitioners', 'somnowell' ),
 				'somnowell-range'   => __( 'Somnowell Range', 'somnowell' ),
 				'for-practitioners' => __( 'For Practitioners', 'somnowell' ),
+				'contact'           => __( 'Contact', 'somnowell' ),
 			)
 		);
 
