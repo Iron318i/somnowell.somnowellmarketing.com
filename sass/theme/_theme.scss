@@ -27,6 +27,7 @@ svg.icon {
 }
 .btn {
   text-transform: uppercase;
+  white-space: normal;
 }
 .main-content .btn {
   min-width: rem(300px);
@@ -412,4 +413,6 @@ svg.icon {
       height: auto !important;
     }
   }
+}
+#post-455 {
 }
