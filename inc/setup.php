@@ -53,6 +53,7 @@ if ( ! function_exists( 'somnowell_setup' ) ) {
 				'footer-2'          => __( 'Footer Practitioners', 'somnowell' ),
 				'somnowell-range'   => __( 'Somnowell Range', 'somnowell' ),
 				'for-practitioners' => __( 'For Practitioners', 'somnowell' ),
+				'about-us'          => __( 'About US', 'somnowell' ),
 				'contact'           => __( 'Contact', 'somnowell' ),
 			)
 		);
@@ -115,4 +116,16 @@ if ( ! function_exists( 'somnowell_custom_excerpt_more' ) ) {
 
 }
 
+/**
+ * Add support for the QuickTime (.mov) video format.
+ */
+add_filter( 'wp_video_extensions',
+	function ( $exts ) {
+		$exts[] = 'mov';
+
+		return $exts;
+	}
+);
+
 add_image_size( 'avatar', 154, 154, array( 'center', 'center' ) );
+add_image_size( 'small', 240, 600 );

@@ -19,9 +19,10 @@ switch ( get_page_template_slug() ) {
 	case 'page-templates/contact.php':
 		$theme_location = "contact";
 		break;
-	case 2:
-		echo "i равно 2";
+	case 'page-templates/about-us.php':
+		$theme_location = "about-us";
 		break;
+
 };
 wp_nav_menu(
 	array(
