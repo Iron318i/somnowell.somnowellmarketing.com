@@ -222,8 +222,8 @@ $input-border-color: $white;
 //$input-border-radius: 3px;
 //$input-focus-border-color:  $white;
 $input-focus-box-shadow: none;
-$form-check-input-width: 1.5em;
-$form-select-indicator-color: $primary;
+$form-check-input-width: 1.1em;
+$form-select-indicator-color: $info;
 // Form validation
 // scss-docs-start form-feedback-variables
 // scss-docs-end form-feedback-variables
@@ -299,6 +299,9 @@ $accordion-body-padding-y: 0;
 $accordion-body-padding-x: 0;
 // Tooltips
 // scss-docs-start tooltip-variables
+$tooltip-max-width: 600px;
+$tooltip-bg: #093259;
+$tooltip-opacity: .95;
 // scss-docs-end tooltip-variables
 // Form tooltips must come after regular tooltips
 // scss-docs-start tooltip-feedback-variables

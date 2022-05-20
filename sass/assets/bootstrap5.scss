@@ -39,7 +39,7 @@ $theme-colors: map-remove($theme-colors, "secondary", "success", "light", "warni
 //@import "../../src/sass/bootstrap5/close";
 //@import "../../src/sass/bootstrap5/toasts";
 //@import "../../src/sass/bootstrap5/modal";
-//@import "../../src/sass/bootstrap5/tooltip";
+@import "../../src/sass/bootstrap5/tooltip";
 //@import "../../src/sass/bootstrap5/popover";
 //@import "../../src/sass/bootstrap5/carousel";
 //@import "../../src/sass/bootstrap5/spinners";

@@ -6,9 +6,13 @@
  */
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+$theme_location = "contact";
 switch ( get_page_template_slug() ) {
 	case 'page-templates/somnowell-range.php':
 		$theme_location = "somnowell-range";
+		break;
+	case 'page-templates/for-petients.php':
+		$theme_location = "for-patients";
 		break;
 	case 'page-templates/for-practitioners.php':
 		$theme_location = "for-practitioners";
