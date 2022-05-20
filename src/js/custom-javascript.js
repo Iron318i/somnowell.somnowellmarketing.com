@@ -41,6 +41,30 @@
             }
         });
 
+        $("#btnSleepinessReset").click(function () {
+            $("#form-epworth-test")[0].reset();
+        });
+
+        $("#btnSleepinessCalculate").click(function () {
+            $sum = 0;
+            $notAll = false;
+
+            $('#form-epworth-test .form-select').each(function () { //loop through each checkbox
+                $answer = $(this).children("option:selected").val();
+                if ($answer != 'choose_answer') {
+                    $sum += parseInt($answer);
+                } else {
+                    $notAll = true;
+                }
+            });
+            if ($notAll) {
+                $('#epworthResault').text('(please answer all the questions)');
+            } else {
+                $('#epworthResault').text(':'.$sum);
+            }
+            console.log($sum);
+        });
+
     });
 
 }(jQuery);
