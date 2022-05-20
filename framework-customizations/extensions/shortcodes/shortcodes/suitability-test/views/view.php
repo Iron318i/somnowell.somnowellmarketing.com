@@ -9,7 +9,7 @@ if ( ! defined( 'FW' ) ) {
  */
 ?>
 <h2>Your Snoring</h2>
-<div class="bord-bot online-test">
+<div class="bord-bot somnowell-suitability-test">
     <div class="ques-wrapper">
         <div class="lbl-wrapper">
             <h5 class="lbl" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="Snoring is a very common sleep related breathing disorder. It is usually caused by airway resistance and or obstruction in the throat with vibration of the soft tissues of the throat. Excellent methods of monitoring snoringare via a sleeping partner or using a digital sound recorder. These sound recorders are available as smartphone apps. Snoring may be associated with Obstructive Sleep Apnoea where there is total obstruction of breathing during sleep.<br/>Y = Mandibular advancement devices are unequivocally proven to control snoring.<br/>N = The Somnowell is designed for snoring, sleep apnoea, bruxism, and TMJD.">Do you snore?</h5>
@@ -485,8 +485,8 @@ if ( ! defined( 'FW' ) ) {
         </div>
     </div>
     <div class="submition mb-2">
-        <input type="button" class="btn-calculate btn btn-primary mr-1" value="Calculate" name="b1">
-        <input name="b2" type="button" class="btn-reset btn btn-outline-info" value="Reset">
+        <input id="btnSuitabilityCalculate" type="button" class="btn btn-primary mb-1" value="Calculate" name="b1">
+        <input id="btnSuitabilityReset" name="b2" type="button" class="btn btn-outline-info mb-1" value="Reset">
     </div>
     <div class="scoring-wrapper wpcf7">
         <div class="scoring h2">Your suitability is</div>
