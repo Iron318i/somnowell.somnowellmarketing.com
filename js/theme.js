@@ -7936,8 +7936,9 @@
       } else {
         $('#epworthResault').text(':'.$sum);
       }
-
-      console.log($sum);
+    });
+    $('.sidebar .nav > .menu-item').hover(function () {
+      $(this).children(".sub-menu").slideDown();
     });
   });
 }(jQuery);
