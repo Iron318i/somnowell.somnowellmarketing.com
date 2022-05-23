@@ -348,7 +348,7 @@ svg.icon {
     }
   }
 }
-.accordion-item {
+.faq .accordion-item {
   border-bottom: 1px dashed #aeaeae;
   .accordion-header {
     padding-left: rem(45px);
@@ -441,5 +441,34 @@ svg.icon {
     display: inline-block;
     padding-right: 1.5rem;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230087BF' d='M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M13,18h-2v-7h2V18z M12,8.5 c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,8.5,12,8.5z'/%3E%3C/svg%3E%0A") right 0px / 1.1rem no-repeat;
+  }
+}
+.useful-links {
+  .accordion-button {
+    @include font-size(rem(30px));
+    color: $blue-500;
+    font-weight: 500;
+    background: linear-gradient(#ffffff 0%, #ffffff 48%, $blue-500 49%, $blue-500 51%, #ffffff 52%, #ffffff 100%);
+    span {
+      padding-right: .5rem;
+      background-color: #fff;
+    }
+    &:after {
+      background-color: #fff;
+    }
+  }
+  .link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(15px 0);
+    border-bottom: 1px dashed #aeaeae;
+  }
+  .name {
+    padding: rem(0 10px 0 42px);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath fill='none' stroke='%230087BF' stroke-width='2' d='M13,1c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S1,19.6,1,13C1,6.4,6.4,1,13,1z '/%3E%3Cpath fill='%230087BF' d='M14.1,15.9c-1.1,0-2.1-0.4-2.8-1.2c-0.3-0.3-0.3-0.9,0-1.2c0.3-0.3,0.9-0.3,1.2,0c0.4,0.4,1,0.6,1.6,0.6 s1.1-0.2,1.6-0.6l2.3-2.3c0.9-0.9,0.9-2.3,0-3.1c-0.9-0.9-2.3-0.9-3.1,0l-1,1c-0.3,0.3-0.9,0.3-1.2,0c-0.3-0.3-0.3-0.9,0-1.2l1-1 c1.5-1.5,4.1-1.5,5.6,0c1.5,1.5,1.5,4.1,0,5.6l-2.3,2.3C16.1,15.5,15.1,15.9,14.1,15.9z'/%3E%3Cpath fill='%230087BF' d='M9.6,20.4c-1.1,0-2.1-0.4-2.8-1.2c-1.5-1.5-1.5-4.1,0-5.6l2.3-2.3c1.5-1.5,4.1-1.5,5.6,0 c0.3,0.3,0.3,0.9,0,1.2s-0.9,0.3-1.2,0c-0.9-0.9-2.3-0.9-3.1,0L8,14.9c-0.9,0.9-0.9,2.3,0,3.1c0.4,0.4,1,0.6,1.6,0.6 c0.6,0,1.1-0.2,1.6-0.6l1-1c0.3-0.3,0.9-0.3,1.2,0c0.3,0.3,0.3,0.9,0,1.2l-1,1C11.6,20,10.6,20.4,9.6,20.4z'/%3E%3C/svg%3E%0A") left center / 1.33rem no-repeat;
+  }
+  .btn {
+    min-width: rem(150px);
   }
 }

@@ -1,6 +1,6 @@
 {
   "browserSyncOptions": {
-    "proxy": "http://somnowell.somnowellmarketing.com",
+    "proxy": "http://beta.somnowell.com/",
     "notify": false,
     "files": [
       "./css/*.min.css",
