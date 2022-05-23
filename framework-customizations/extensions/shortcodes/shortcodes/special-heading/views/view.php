@@ -7,8 +7,8 @@ if ( ! defined( 'FW' ) ) {
  */
 $class         = ( $atts['ttu'] ) ? ' text-uppercase' : '';
 $class         .= ( $atts['subtitle'] ) ? ' mb-0' : '';
-$wrapper_class = ( $atts['heading_color'] ) ? ' ' . $atts['heading_color'] : '';
-$wrapper_class .= ( $atts['line'] ) ? ' line' : '';
+$class         .= ( $atts['heading_color'] ) ? ' ' . $atts['heading_color'] : '';
+$wrapper_class = ( $atts['line'] ) ? ' line' : '';
 $class         .= ( $atts['heading_weight'] ) ? ' ' . $atts['heading_weight'] : '';
 if ( empty( $atts['subtitle'] ) ):
 	switch ( $atts['margin_bottom'] ) {

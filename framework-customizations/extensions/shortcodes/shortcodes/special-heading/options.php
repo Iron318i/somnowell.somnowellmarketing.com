@@ -31,17 +31,18 @@ $options = array(
 		'type'    => 'select',
 		'label'   => __( 'Heading Color', 'fw' ),
 		'choices' => array(
-			''             => '---',
-			'text-white'   => 'White',
-			'text-primary' => 'Primary',
+			''           => '---',
+			'text-white' => 'White',
+			'text-black' => 'Black',
 		)
 	),
 	'heading_weight' => array(
 		'type'    => 'select',
 		'label'   => __( 'Font weight', 'fw' ),
 		'choices' => array(
-			''         => 'Bold',
-			'fw-black' => 'Black',
+			''          => 'Bold',
+			'fw-normal' => 'Normal',
+			'fw-black'  => 'Black',
 		)
 	),
 	'margin_bottom'  => array(

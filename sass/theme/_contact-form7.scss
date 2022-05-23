@@ -56,3 +56,19 @@
     }
   }
 }
+@include media-breakpoint-up(md) {
+  #wpcf7-f5-p856-o1 {
+    .i-address {
+      .form-control {
+        min-height: rem(174px);
+      }
+    }
+    .wpcf7-list-item-label {
+      font-size: .85rem;
+    }
+    .btn {
+      min-width: 100px;
+      width: 100%;
+    }
+  }
+}
