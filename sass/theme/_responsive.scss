@@ -110,6 +110,25 @@
       background-position: right center;
     }
   }
+  .main-banner {
+    min-height: 61.35417vw;
+    .main-banner .text {
+      padding-top: 10vw;
+      max-width: 31.66667rem;
+    }
+    .social {
+      a {
+        font-size: rem(80px);
+      }
+    }
+    .bottom {
+      margin-top: 13rem;
+    }
+    .banner-about {
+      margin-top: 11rem;
+      margin-bottom: -3rem;
+    }
+  }
 }
 @include media-breakpoint-down(md) {
 }

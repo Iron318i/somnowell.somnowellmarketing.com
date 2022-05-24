@@ -9,8 +9,74 @@ get_header();
     <div class="container">
         <div class="text">
             <h1>We are dedicated to the aim of continually improving the Somnowell product</h1>
-            <p>thereby bringing a life changing solution to people suffering
-                the effects of problematic snoring and obstructive sleep apnoea.</p>
+            <p class="mb-3">thereby bringing a life changing solution to people suffering the effects of problematic snoring and obstructive sleep apnoea.</p>
+            <p><a href="/somnowell-practitioners-uk" class="btn btn-lg btn-outline-info">Find a Local Practitioner</a></p>
+            <p><a href="https://uk.trustpilot.com/review/www.somnowell.com?utm_medium=trustbox&utm_source=MicroReviewCount" class="btn btn-lg btn-info" target="_blank">See our reviews on <img src="<?php echo get_template_directory_uri() ?>/img/trustpilot.svg" alt="Trustpilot"></a></p>
+        </div>
+        <div class="row bottom">
+            <div class="col-md-5">
+                <div class="social">
+                    <p>
+                        <a href="https://www.facebook.com/pages/Somnowell/140209009364620" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#facebook-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/somnowell" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#linkdin-icon"></use>
+                            </svg>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://twitter.com/somnowell" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#twitter-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.google.com/+Somnowell" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#google-icon"></use>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="banner-about">
+                    <div class="fw-heading fw-heading-h2 line"><h2 class="fw-special-title">SOMNOWELL</h2></div>
+                    <div class="text-block fsz-24">
+                        <p>Introducing the world's leading oral appliance with 93 - 96% success rates!<br> For: <a href="/snoring/somnowell-for-snoring">snoring</a>, <a href="/sleep-apnoea/somnowell-for-sleep-apnoea">sleep apnoea</a>, <a href="/bruxism/somnowell-for-bruxism">bruxism</a>, <a href="/tmj/somnowell-for-tmj">TMJ</a>, and <a href="/retainers/somnowell-retainers">retention</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-video pt-5 pb-3">
+    <div class="container">
+        <div class="row gx-lg-3">
+            <div class="col-lg-8">
+                <div class="ratio ratio-16x9 mb-1">
+                    <iframe title="Jonathan Davies Video Testimonial" width="300" height="169" src="https://www.youtube.com/embed/PRSxlCTsiD0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-4 video-info">
+                <div class="info-heading">
+                    <h5 class="title">
+                        <svg class="icon">
+                            <use xlink:href="#video"></use>
+                        </svg>
+                        Somnowell Ambassador: Jonathan Davies OBE (Former British Rugby Player) Device fitted by Dr Matthew White
+                    </h5>
+                </div>
+                <div class="row ms-lg-2">
+                    <div class="col-auto mb-1"><img src="<?php echo site_url() ?>/wp-content/uploads/2022/05/sert-1.png" alt="Lifetime Guarantee"></div>
+                    <div class="col-auto mb-1"><img src="<?php echo site_url() ?>/wp-content/uploads/2022/05/sert-2.png" alt="Patented"></div>
+                    <div class="col-auto mb-1"><img src="<?php echo site_url() ?>/wp-content/uploads/2022/05/sert-3.png" alt="Best Oral Hygiene"></div>
+                </div>
+                <p><a href="<?php the_permalink( 14 ); ?>" class="btn btn-info d-lg-block">Learn More</a></p>
+            </div>
         </div>
     </div>
 </section>

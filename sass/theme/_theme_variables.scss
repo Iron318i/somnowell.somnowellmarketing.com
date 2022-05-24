@@ -139,7 +139,7 @@ $grid-gutter-width: rem(30px);
 // scss-docs-start border-radius-variables
 $border-radius: rem(4px);
 $border-radius-sm: rem(4px);
-$border-radius-lg: 0;
+$border-radius-lg: rem(4px);
 // scss-docs-end border-radius-variables
 // scss-docs-start box-shadow-variables
 // scss-docs-end box-shadow-variables
@@ -209,6 +209,9 @@ $btn-border-width: 2px;
 $btn-padding-y-sm: rem(7.5px);
 $btn-padding-x-sm: 1rem;
 $btn-font-size-sm: rem(16px);
+$btn-padding-y-lg: rem(15px);
+$btn-padding-x-lg: 1rem;
+$btn-font-size-lg: rem(19px);
 //$btn-border-width: 0;
 // Allows for customizing button radius independently from global border radius
 // scss-docs-end btn-variables
