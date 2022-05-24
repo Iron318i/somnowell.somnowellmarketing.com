@@ -30,6 +30,17 @@
       width: 70%;
     }
   }
+  .main-banner {
+    .main-banner .text {
+      max-width: 38rem;
+    }
+    .bottom {
+      margin-top: 6rem;
+    }
+    .banner-about {
+      margin-top: 8rem;
+    }
+  }
 }
 @include media-breakpoint-up(lg) {
   html {
@@ -112,7 +123,7 @@
   }
   .main-banner {
     min-height: 61.35417vw;
-    .main-banner .text {
+    .text {
       padding-top: 10vw;
       max-width: 31.66667rem;
     }
