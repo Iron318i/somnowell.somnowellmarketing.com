@@ -22,3 +22,6 @@ and open the template in the editor.
 .js-option-type-icon-container .js-option-type-icon-item:before {
     font-size: 40px;
 }
+.fw-brz-dismiss {
+    display: none !important;
+}
