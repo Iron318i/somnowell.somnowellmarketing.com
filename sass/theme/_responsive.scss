@@ -16,6 +16,9 @@
   }
 }
 @include media-breakpoint-up(sm) {
+  .main-banner {
+    background: url(../img/main-banner-lg.jpg) top center / cover no-repeat;
+  }
   .two-cols {
     columns: 2;
     column-gap: 1rem;
@@ -31,7 +34,8 @@
     }
   }
   .main-banner {
-    .main-banner .text {
+    .text {
+      padding-top: 8rem;
       max-width: 38rem;
     }
     .bottom {
@@ -141,5 +145,52 @@
     }
   }
 }
+@media (min-width: 1920px) {
+  .main-banner {
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 1178px;
+  }
+}
 @include media-breakpoint-down(md) {
+  .main-banner {
+    .bottom {
+      .col-md-7 {
+        background-color: #fff;
+      }
+    }
+  }
+}
+@include media-breakpoint-only(sm) {
+  .main-banner {
+    background-position: 75% 50%;
+    .text {
+      padding-top: 5rem;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .main-banner {
+    background: url(../img/main-banner-sm.jpg) top center / 100% no-repeat;
+    h1 {
+      font-size: vw-sm(30px);
+    }
+    .text {
+      padding-top: 25vw;
+      min-height: 161vw;
+      max-width: 80%;
+      .mb-3 {
+        font-size: vw-sm(22px);
+      }
+    }
+    .bottom {
+      margin-top: 0;
+    }
+    .social {
+      padding-bottom: 8vw;
+      a {
+        font-size: 13vw;
+      }
+    }
+  }
 }
