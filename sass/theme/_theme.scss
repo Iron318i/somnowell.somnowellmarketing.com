@@ -529,3 +529,15 @@ svg.icon {
     min-width: rem(150px);
   }
 }
+.professor {
+  .content {
+    max-width: rem(670px);
+  }
+  .btn {
+    min-width: rem(378px);
+  }
+  .info-heading .title .icon {
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
+  }
+}

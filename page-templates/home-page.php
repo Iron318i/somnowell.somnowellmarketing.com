@@ -53,7 +53,7 @@ get_header();
         </div>
     </div>
 </section>
-<section class="home-video pt-5 pb-3">
+<section class="home-video pt-5">
     <div class="container">
         <div class="row gx-lg-3">
             <div class="col-lg-8">
@@ -76,6 +76,39 @@ get_header();
                     <div class="col-auto mb-1"><img src="<?php echo site_url() ?>/wp-content/uploads/2022/05/sert-3.png" alt="Best Oral Hygiene"></div>
                 </div>
                 <p><a href="<?php the_permalink( 14 ); ?>" class="btn btn-info d-lg-block">Learn More</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="professor py-2 py-lg-4">
+    <div class="container">
+        <div class="row flex-md-row-reverse">
+            <div class="col-md-4">
+				<?php echo wp_get_attachment_image( 916, 'full', false, array( "class" => 'mb-1' ) ); ?>
+            </div>
+            <div class="col-md-8">
+                <div class="content">
+                    <div class="info-heading">
+                        <h5 class="title">
+                            <svg class="icon">
+                                <use xlink:href="#person"></use>
+                            </svg>
+                            Visiting Professor Simon Ash BDS MSc DOrth MOrth FDS
+                        </h5>
+                    </div>
+                    <p class="fsz-24 mb-md-2">The Somnowell was invented by Visiting Professor Simon Ash, a highly respected Consultant and Specialist Orthodontist with over 30 years clinical experience, who has successfully treated thousands of patients, including doctors, dentists, lawyers, professors, celebrities, and royalty.</p>
+                    <p class="mb-md-2"><a href="<?php the_permalink( 14 ); ?>" class="btn btn-info">Learn More</a></p>
+                </div>
+                <div class="recommended-by">
+                    <div class="row">
+                        <div class="col-lg-auto">
+                            <h6 class="mb-lg-0">Recommended By:</h6>
+                        </div>
+                        <div class="col-lg-auto">
+                            <img src="<?php echo get_template_directory_uri() ?>/img/recommended-by-img.jpg" alt="Recommended By">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
