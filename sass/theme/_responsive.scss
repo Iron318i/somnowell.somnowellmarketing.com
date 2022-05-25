@@ -47,6 +47,9 @@
   }
 }
 @include media-breakpoint-up(lg) {
+  .hide-lg-up {
+    display: none !important;
+  }
   html {
     font-size: 16px;
   }
@@ -75,6 +78,9 @@
     h1 {
       font-size: rem(44px);
     }
+  }
+  .home-speak {
+    background: url(../img/home-speak-bg-lg.jpg) 50%  / cover no-repeat;
   }
 }
 @include media-breakpoint-up(xl) {

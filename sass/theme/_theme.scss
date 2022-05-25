@@ -541,3 +541,23 @@ svg.icon {
     margin-right: 0.2rem;
   }
 }
+.home-speak {
+  background: url(../img/home-speak-bg-md.jpg) 50%  / cover no-repeat;
+  .content {
+    padding: 1rem 0;
+    max-width: rem(530px);
+  }
+  .btn {
+    min-width: rem(300px);
+  }
+  .wpcf7 {
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    width: rem(300px);
+  }
+  .hide-lg-up {
+    object-fit: cover;
+    height: 100%;
+  }
+}

@@ -80,7 +80,7 @@ get_header();
         </div>
     </div>
 </section>
-<section class="professor py-2 py-lg-4">
+<div class="professor py-2 py-lg-4">
     <div class="container">
         <div class="row flex-md-row-reverse">
             <div class="col-md-4">
@@ -112,7 +112,27 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</div>
+<div class="home-speak">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content py-md-3">
+                    <h2 class="text-primary">Speak with our team of Somnowell Experts Today!</h2>
+                    <p class="fsz-24">Find out if you may be suitable for the Somnowell device for snoring and sleep apnoea.</p>
+                    <div class="mb-2 mb-lg-5">
+                        <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/lucie-ash/20min');return false;" class="btn btn btn-outline-info">Schedule a call</a>
+                    </div>
+                    <h2 class="text-primary">QUICK PRACTITIONER FINDER</h2>
+					<?php echo do_shortcode( '[contact-form-7 id="917" title="Quick practitioner finder"]' ) ?>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+				<?php echo wp_get_attachment_image( 919, 'full', false, array( "class" => 'hide-lg-up' ) ); ?>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="content" tabindex="-1">
 	<?php
 	while ( have_posts() ) {
