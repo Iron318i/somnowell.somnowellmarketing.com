@@ -19,8 +19,10 @@ get_header();
         <div class="container pt-1 pb-3" id="post-<?php the_ID(); ?>">
             <div class="row wrapper flex-md-row-reverse">
                 <div class="col-auto main-content">
-                    <h1 class="text-info">BLOG</h1>
-                    <p class="fsz-24 mb-2">Check our blog regularly to get all the latest information about Somnowell and the world of snoring, obstructive sleep apnoea, bruxism, TMJD, and retention. Simply subscribe to our RSS feed to get instant notification whenever we release a new blog post.</p>
+					<?php
+					the_archive_title( '<h1 class="text-info text-uppercase">', '</h1>' );
+					the_archive_description( '<div class="fsz-24 mb-2">', '</div>' );
+					?>
                     <div class="articles">
 						<?php
 						if ( have_posts() ) {

@@ -7,31 +7,33 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-<article <?php post_class( '' ); ?> id="post-<?php the_ID(); ?>">
-	<?php
-	if ( has_post_thumbnail() ) {
-		?>
-        <a href="<?php echo get_permalink() ?>">
-			<?php echo get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => '' ) ); ?>
-        </a>
+<article <?php post_class( 'post-card' ); ?> id="post-<?php the_ID(); ?>">
+    <div class="row">
 		<?php
-	} else {
-	}
-	?>
-	<?php
-	the_title(
-		sprintf( '<h2 class="h4"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>'
-	);
-	?>
-    <div class="excerpt">
-		<?php the_excerpt(); ?>
+		$image_url = get_the_post_thumbnail_url( $post->ID, 'thumbnail' );
+		if ( ! $image_url ) {
+			preg_match( '/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $post->post_content, $image );
+			if ( ! empty( $image['src'] ) ) {
+				$image_url = $image['src'];
+			} else {
+				$image_url = site_url() . '/wp-content/uploads/2022/05/somnowell_logo_main-480x331.jpg';
+			}
+		}
+		?>
+        <div class="col-md-4">
+            <a href="<?php echo get_permalink() ?>">
+                <img src="<?php echo $image_url ?>" alt="<?php the_title() ?>">
+            </a>
+        </div>
+        <div class="col-md-8">
+			<?php
+			the_title(
+				sprintf( '<h2 class="h4"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>'
+			);
+			?>
+            <div class="excerpt">
+				<?php the_excerpt(); ?>
+            </div>
+        </div>
     </div>
-	<?php
-	wp_link_pages(
-		array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'somnowell' ),
-			'after'  => '</div>',
-		)
-	);
-	?>
 </article><!-- #post-## -->
