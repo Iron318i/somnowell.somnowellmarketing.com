@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
     <div id="content" tabindex="-1">
-        <div class="container pt-1 pb-3" id="post-<?php the_ID(); ?>">
+        <div class="container pt-1 pb-3">
             <div class="row wrapper flex-md-row-reverse">
                 <div class="col-auto main-content">
 					<?php
