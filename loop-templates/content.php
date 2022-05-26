@@ -20,12 +20,12 @@ defined( 'ABSPATH' ) || exit;
 			}
 		}
 		?>
-        <div class="col-md-4">
-            <a href="<?php echo get_permalink() ?>">
+        <div class="col-sm-4">
+            <a href="<?php echo get_permalink() ?>" class="img-link">
                 <img src="<?php echo $image_url ?>" alt="<?php the_title() ?>">
             </a>
         </div>
-        <div class="col-md-8">
+        <div class="col-sm-8">
 			<?php
 			the_title(
 				sprintf( '<h2 class="h4"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>'
