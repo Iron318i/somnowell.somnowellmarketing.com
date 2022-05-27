@@ -5,32 +5,14 @@ if ( ! defined( 'FW' ) ) {
 }
 
 $options = array(
-	'practitioners' => array(
-		'type'            => 'addable-popup',
-		'label'           => __( 'Practioner', '{domain}' ),
-		'template'        => '{{- name }}',
-		'popup-title'     => null,
-		'size'            => 'large', // small, medium, large
-		'limit'           => 0, // limit the number of popup`s that can be added
-		'add-button-text' => __( 'Add', '{domain}' ),
-		'sortable'        => true,
-		'popup-options'   => array(
-			'practioner_id' => array(
-				'label'      => 'Select Practioner Page',
-				'type'       => 'multi-select',
-				'population' => 'posts',
-				'source'     => 'practioner',
-				'limit'      => 1
-			),
-			'name'          => array(
-				'type'  => 'text',
-				'label' => __( 'Name', 'fw' ),
-			),
+	'practioner_options' => array(
+		'type'    => 'box',
+		'options' => array(
 			'specification' => array(
 				'type'  => 'text',
 				'label' => __( 'Specification', 'fw' ),
 			),
-			'description'   => array(
+			'address'       => array(
 				'type'  => 'wp-editor',
 				'label' => __( 'Address and Contact Details', 'fw' ),
 			),
@@ -54,5 +36,6 @@ $options = array(
 				'inline'  => false,
 			)
 		),
+		'title'   => __( 'Options', '{domain}' ),
 	),
 );

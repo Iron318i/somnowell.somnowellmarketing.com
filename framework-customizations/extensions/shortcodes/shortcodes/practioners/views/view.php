@@ -10,7 +10,8 @@ if ( ! defined( 'FW' ) ) {
 $id = fw_unique_increment();
 ?>
 <div class="practitioners mb-1">
-	<?php foreach ( $atts['practitioners'] as $key => $value ) { ?>
+	<?php foreach ( $atts['practitioners'] as $key => $value ) {
+		?>
         <div class="practioner">
             <div class="info">
                 <p class="heading"><strong><?php echo $value['name'] ?></strong><?php if ( $value['specification'] != '' )
@@ -41,7 +42,11 @@ $id = fw_unique_increment();
                 </p>
             </div>
             <div class="btn-wrp">
-                <a href="<?php the_permalink( 5012 ); ?>?dr=<?php echo urlencode( $value['name'] ) ?>" class="btn btn-sm btn-outline-info">Contact</a>
+				<?php if ( isset( $value['practioner_id'][0] ) ) { ?>
+                    <a href="<?php the_permalink( $value['practioner_id'][0] ); ?>" class="btn btn-sm btn-outline-info">View</a>
+				<?php } else { ?>
+                    <a href="<?php the_permalink( 5012 ); ?>?dr=<?php echo urlencode( $value['name'] ) ?>" class="btn btn-sm btn-outline-info">Contact</a>
+				<?php } ?>
             </div>
         </div>
 	<?php } ?>
