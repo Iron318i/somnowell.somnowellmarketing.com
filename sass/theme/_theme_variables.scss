@@ -317,6 +317,12 @@ $tooltip-opacity: .95;
 // scss-docs-end toast-variables
 // Badges
 // scss-docs-start badge-variables
+$badge-font-size: .7em;
+$badge-font-weight: 400;
+$badge-color: $white;
+$badge-padding-y: .35em !default;
+$badge-padding-x: .65em !default;
+$badge-border-radius: 0;
 // scss-docs-end badge-variables
 // Modals
 // scss-docs-start modal-variables

@@ -579,3 +579,38 @@ svg.icon {
     opacity: .8;
   }
 }
+.key-info {
+  p {
+    margin-bottom: .5rem;
+    color: #7c7c7c;
+  }
+}
+.badge {
+  text-transform: uppercase;
+  + .badge {
+    margin-left: rem(10px);
+  }
+  &.partner {
+    color: #b1b1b1;
+    box-shadow: inset 0 0 0 1px #b1b1b1;
+  }
+  &.certified {
+    color: #040505;
+    box-shadow: inset 0 0 0 1px #040505;
+  }
+  &.bronze {
+    background: linear-gradient(#da9f5b, #a54e04);
+  }
+  &.silver {
+    background: linear-gradient(#acbdc7, #627481);
+  }
+  &.gold {
+    background: linear-gradient(#f3dd87, #e2c336);
+  }
+  &.platinum {
+    background: linear-gradient(#d9dadc, #b0b1b4);
+  }
+  &.finance {
+    background: #219653;
+  }
+}

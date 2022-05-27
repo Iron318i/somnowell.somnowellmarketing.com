@@ -32,7 +32,7 @@ $theme-colors: map-remove($theme-colors, "secondary", "success", "light", "warni
 @import "../../src/sass/bootstrap5/accordion";
 //@import "../../src/sass/bootstrap5/breadcrumb";
 @import "../../src/sass/bootstrap5/pagination";
-//@import "../../src/sass/bootstrap5/badge";
+@import "../../src/sass/bootstrap5/badge";
 //@import "../../src/sass/bootstrap5/alert";
 //@import "../../src/sass/bootstrap5/progress";
 //@import "../../src/sass/bootstrap5/list-group";
