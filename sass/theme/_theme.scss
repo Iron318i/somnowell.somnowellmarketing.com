@@ -580,6 +580,7 @@ svg.icon {
   }
 }
 .key-info {
+  margin-bottom: 2rem;
   p {
     margin-bottom: .5rem;
     color: #7c7c7c;
@@ -612,5 +613,13 @@ svg.icon {
   }
   &.finance {
     background: #219653;
+  }
+}
+.practioner {
+  padding: rem(28px 0 28px 40px);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46' fill='%230087BF'%3E%3Cpath d='M32.7,43h-4V31c0-1.4-1.1-2.5-2.5-2.5h-6.5c-1.4,0-2.5,1.1-2.5,2.5v12h-4V31c0-3.6,2.9-6.5,6.5-6.5h6.5	c3.6,0,6.5,2.9,6.5,6.5V43z'/%3E%3Cpath d='M23,28c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S27.4,28,23,28z M23,16c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4	S25.2,16,23,16z'/%3E%3Cpath d='M23,46C10.3,46,0,35.7,0,23S10.3,0,23,0s23,10.3,23,23S35.7,46,23,46z M23,4C12.5,4,4,12.5,4,23	s8.5,19,19,19s19-8.5,19-19S33.5,4,23,4z'/%3E%3C/svg%3E%0A") 0 1.5rem / 1.3rem no-repeat;
+  border-bottom: 1px dashed #aeaeae;
+  .btn {
+    min-width: rem(150px);
   }
 }

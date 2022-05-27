@@ -25,7 +25,12 @@ $options = array(
 			),
 			'description'   => array(
 				'type'  => 'wp-editor',
-				'label' => __( 'Description', 'fw' ),
+				'label' => __( 'Address and Contact Details', 'fw' ),
+			),
+			'add_text'      => array(
+				'type'  => 'text',
+				'value' => '',
+				'label' => __( 'Additional text', 'fw' ),
 			),
 			'badges'        => array(
 				'type'    => 'checkboxes',

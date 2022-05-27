@@ -51,6 +51,14 @@
       margin-top: 8rem;
     }
   }
+  .practioner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(5px);
+    .info {
+      padding-right: 5rem;
+    }
+  }
 }
 @include media-breakpoint-up(lg) {
   .hide-lg-up {
