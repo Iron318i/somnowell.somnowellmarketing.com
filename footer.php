@@ -108,6 +108,18 @@ defined( 'ABSPATH' ) || exit;
 </div>
 <?php get_template_part( 'template-parts/svg-sprite' ) ?>
 <?php wp_footer(); ?>
+<?php if ( 'practioner' == get_post_type() ) {
+	?>
+    <script>
+        +function ($) {
+            $(document).ready(function () {
+                $('.wpcf7-submit').val('Send Message to <?php echo str_replace( '&#8217;', "\'", get_the_title() ); ?>');
+                $('#recipientEmail').val('<?php echo fw_get_db_post_option( $post->ID, 'recipient_email' ) ?>');
+                $('#practionerName').val('<?php the_title(); ?>');
+            });
+        }(jQuery);
+    </script>
+<?php } ?>
 <?php echo fw_get_db_settings_option( 'before_body' ) ?>
 </body>
 </html>

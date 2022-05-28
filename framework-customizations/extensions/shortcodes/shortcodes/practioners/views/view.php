@@ -10,36 +10,40 @@ if ( ! defined( 'FW' ) ) {
 $id = fw_unique_increment();
 ?>
 <div class="practitioners mb-1">
-	<?php foreach ( $atts['practitioners'] as $key => $value ) {
-		?>
+	<?php foreach ( $atts['practitioners'] as $key => $value ) { ?>
         <div class="practioner">
             <div class="info">
-                <p class="heading"><strong><?php echo $value['name'] ?></strong><?php if ( $value['specification'] != '' )
-						echo ' | ' ?><?php echo $value['specification'] ?></p>
+				<?php foreach ( $value['persons'] as $person ) { ?>
+                    <p class="heading"><strong><?php echo $person['name'] ?></strong><?php if ( $person['specification'] != '' )
+							echo ' | ' ?><?php echo $person['specification'] ?></p>
+                    <p>
+						<?php if ( isset( $person['badges']["partner"] ) ) { ?>
+                            <span class="badge partner">Partner</span>
+						<?php } ?>
+						<?php if ( isset( $person['badges']["certified"] ) ) { ?>
+                            <span class="badge certified">Certified</span>
+						<?php } ?>
+						<?php if ( isset( $person['badges']["bronze"] ) ) { ?>
+                            <span class="badge bronze">Bronze</span>
+						<?php } ?>
+						<?php if ( isset( $person['badges']["silver"] ) ) { ?>
+                            <span class="badge silver">Silver</span>
+						<?php } ?>
+						<?php if ( isset( $person['badges']["gold"] ) ) { ?>
+                            <span class="badge gold">Gold</span>
+						<?php } ?>
+						<?php if ( isset( $person['badges']["platinum"] ) ) { ?>
+                            <span class="badge platinum">Platinum</span>
+						<?php } ?>
+						<?php if ( isset( $person['badges']["finance"] ) ) { ?>
+                            <span class="badge finance">Finance</span>
+						<?php } ?>
+                    </p>
+				<?php } ?>
 				<?php echo str_replace( array( "\r\n", "\r", "\n", "<br />", "<br>" ), ', ', $value['description'] ) ?>
-                <p>
-					<?php if ( isset( $value['badges']["partner"] ) ) { ?>
-                        <span class="badge partner">Partner</span>
-					<?php } ?>
-					<?php if ( isset( $value['badges']["certified"] ) ) { ?>
-                        <span class="badge certified">Certified</span>
-					<?php } ?>
-					<?php if ( isset( $value['badges']["bronze"] ) ) { ?>
-                        <span class="badge bronze">Bronze</span>
-					<?php } ?>
-					<?php if ( isset( $value['badges']["silver"] ) ) { ?>
-                        <span class="badge silver">Silver</span>
-					<?php } ?>
-					<?php if ( isset( $value['badges']["gold"] ) ) { ?>
-                        <span class="badge gold">Gold</span>
-					<?php } ?>
-					<?php if ( isset( $value['badges']["platinum"] ) ) { ?>
-                        <span class="badge platinum">Platinum</span>
-					<?php } ?>
-					<?php if ( isset( $value['badges']["finance"] ) ) { ?>
-                        <span class="badge finance">Finance</span>
-					<?php } ?>
-                </p>
+				<?php if ( $value['add_text'] != '' ) { ?>
+                    <p class="add_text"><?php echo $value['add_text'] ?></p>
+				<?php } ?>
             </div>
             <div class="btn-wrp">
 				<?php if ( isset( $value['practioner_id'][0] ) ) { ?>
