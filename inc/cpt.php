@@ -37,30 +37,30 @@ function register_somnowell_post_type() {
 }
 
 function practioner_rewrites() {
-	add_rewrite_rule( '[^/]+/attachment/([^/]+)/?$', 'index.php?attachment=$matches[1]', 'bottom' );
-	add_rewrite_rule( '[^/]+/attachment/([^/]+)/trackback/?$', 'index.php?attachment=$matches[1]&tb=1', 'bottom' );
-	add_rewrite_rule( '[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
-	add_rewrite_rule( '[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
-	add_rewrite_rule( '[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$', 'index.php?attachment=$matches[1]&cpage=$matches[2]', 'bottom' );
-	add_rewrite_rule( '[^/]+/attachment/([^/]+)/embed/?$', 'index.php?attachment=$matches[1]&embed=true', 'bottom' );
-	add_rewrite_rule( '([^/]+)/embed/?$', 'index.php?practioner=$matches[1]&embed=true', 'bottom' );
-	add_rewrite_rule( '([^/]+)/trackback/?$', 'index.php?practioner=$matches[1]&tb=1', 'bottom' );
-	add_rewrite_rule( '([^/]+)/page/?([0-9]{1,})/?$', 'index.php?practioner=$matches[1]&paged=$matches[2]', 'bottom' );
-	add_rewrite_rule( '([^/]+)/comment-page-([0-9]{1,})/?$', 'index.php?practioner=$matches[1]&cpage=$matches[2]', 'bottom' );
-	add_rewrite_rule( '([^/]+)(?:/([0-9]+))?/?$', 'index.php?practioner=$matches[1]', 'bottom' );
-	add_rewrite_rule( '[^/]+/([^/]+)/?$', 'index.php?attachment=$matches[1]', 'bottom' );
-	add_rewrite_rule( '[^/]+/([^/]+)/trackback/?$', 'index.php?attachment=$matches[1]&tb=1', 'bottom' );
-	add_rewrite_rule( '[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
-	add_rewrite_rule( '[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
-	add_rewrite_rule( '[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$', 'index.php?attachment=$matches[1]&cpage=$matches[2]', 'bottom' );
-	add_rewrite_rule( '[^/]+/([^/]+)/embed/?$', 'index.php?attachment=$matches[1]&embed=true', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/attachment/([^/]+)/?$', 'index.php?attachment=$matches[1]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/attachment/([^/]+)/trackback/?$', 'index.php?attachment=$matches[1]&tb=1', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$', 'index.php?attachment=$matches[1]&cpage=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/attachment/([^/]+)/embed/?$', 'index.php?attachment=$matches[1]&embed=true', 'bottom' );
+	add_rewrite_rule( 'contact-([^/]+)/embed/?$', 'index.php?practioner=$matches[1]&embed=true', 'bottom' );
+	add_rewrite_rule( 'contact-([^/]+)/trackback/?$', 'index.php?practioner=$matches[1]&tb=1', 'bottom' );
+	add_rewrite_rule( 'contact-([^/]+)/page/?([0-9]{1,})/?$', 'index.php?practioner=$matches[1]&paged=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-([^/]+)/comment-page-([0-9]{1,})/?$', 'index.php?practioner=$matches[1]&cpage=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-([^/]+)(?:/([0-9]+))?/?$', 'index.php?practioner=$matches[1]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/([^/]+)/?$', 'index.php?attachment=$matches[1]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/([^/]+)/trackback/?$', 'index.php?attachment=$matches[1]&tb=1', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$', 'index.php?attachment=$matches[1]&feed=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$', 'index.php?attachment=$matches[1]&cpage=$matches[2]', 'bottom' );
+	add_rewrite_rule( 'contact-[^/]+/([^/]+)/embed/?$', 'index.php?attachment=$matches[1]&embed=true', 'bottom' );
 }
 
 add_action( 'init', 'practioner_rewrites' );
 
 function practioner_permalinks( $post_link, $post, $leavename ) {
 	if ( isset( $post->post_type ) && 'practioner' == $post->post_type ) {
-		$post_link = home_url( $post->post_name );
+		$post_link = home_url( 'contact-' . $post->post_name );
 	}
 
 	return $post_link;
