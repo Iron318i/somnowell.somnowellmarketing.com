@@ -10,7 +10,5 @@ if ( ! defined( 'FW' ) ) {
 ?>
 <div class="regions row">
     <div class="col-auto"><h2><?php echo $atts['heading']; ?></h2></div>
-    <div id="regionsDropdown" class="col-auto">
-
-    </div>
+    <div id="regionsDropdown" class="col-auto"></div>
 </div>

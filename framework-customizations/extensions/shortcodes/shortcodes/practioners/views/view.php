@@ -40,7 +40,10 @@ $id = fw_unique_increment();
 						<?php } ?>
                     </p>
 				<?php } ?>
-				<?php echo str_replace( array( "\r\n", "\r", "\n", "<br />", "<br>" ), ', ', $value['description'] ) ?>
+				<?php
+				$description = str_replace( array( "\r\n", "\r", "\n", "<br />", "<br>" ), ', ', $value['description'] );
+				echo str_replace( ',,', ',', $description );
+				?>
 				<?php if ( $value['add_text'] != '' ) { ?>
                     <p class="add_text"><?php echo $value['add_text'] ?></p>
 				<?php } ?>

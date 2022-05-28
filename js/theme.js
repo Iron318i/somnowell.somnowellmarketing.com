@@ -7946,7 +7946,7 @@
       let contents = '';
       const elHeaders = document.querySelectorAll('.region h3');
       elHeaders.forEach((el, index) => {
-        contents += `<option value="${el.textContent.toLowerCase()}">${el.textContent}</option>`;
+        contents += `<option value="${el.textContent.replace(/ /ig, "-").toLowerCase()}">${el.textContent}</option>`;
       });
       $('#regionsDropdown').append(tpl.replace('{{contents}}', contents));
       $('#regionsSelect').on('change', function () {
