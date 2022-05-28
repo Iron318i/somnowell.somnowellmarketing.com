@@ -67,6 +67,25 @@
         $('.sidebar .nav > .menu-item').hover(function () {
             $(this).children(".sub-menu").slideDown();
         });
+
+        if ($('#regionsDropdown').length) {
+            const tpl = '<select id="regionsSelect" class="form-select"><option value="all" selected>All Regions</option>{{contents}}</select>';
+            let contents = '';
+            const elHeaders = document.querySelectorAll('.region h3');
+            elHeaders.forEach((el, index) => {
+                contents += `<option value="${el.textContent.toLowerCase()}">${el.textContent}</option>`;
+            });
+            $('#regionsDropdown').append(tpl.replace('{{contents}}', contents));
+
+            $('#regionsSelect').on('change', function () {
+                if (this.value == "all") {
+                    $('.region').show();
+                } else {
+                    $('.region').hide();
+                    $('#' + this.value).show();
+                }
+            });
+        }
     });
 
 }(jQuery);

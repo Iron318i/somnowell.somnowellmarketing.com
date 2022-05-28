@@ -634,3 +634,20 @@ svg.icon {
   font-size: .8rem;
   font-style: italic;
 }
+.content-section.region {
+  margin-bottom: 2rem;
+}
+.regions {
+  margin-bottom: 1rem;
+  align-items: center;
+  .col-auto {
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  .form-select {
+    min-width: rem(300px);
+    border-color: #bababa;
+  }
+}
