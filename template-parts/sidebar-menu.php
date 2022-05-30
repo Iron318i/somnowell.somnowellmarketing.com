@@ -26,6 +26,12 @@ switch ( get_page_template_slug() ) {
 	case 'page-templates/about-us.php':
 		$theme_location = "about-us";
 		break;
+	case 'page-templates/portal.php':
+		$theme_location = "portal";
+		break;
+	case 'page-templates/partner-area.php':
+		$theme_location = "partner-area";
+		break;
 
 };
 wp_nav_menu(

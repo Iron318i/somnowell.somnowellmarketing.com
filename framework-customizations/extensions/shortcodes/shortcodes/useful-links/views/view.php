@@ -13,14 +13,16 @@ $id = fw_unique_increment();
     <div class="accordion" id="accordionLinks-<?php echo $id; ?>">
 		<?php foreach ( $atts['links'] as $key => $value ) { ?>
             <div class="accordion-item">
-                <h5 class="accordion-header" id="flush-heading-<?php echo $key ?>-<?php echo $id; ?>">
-                    <button class="accordion-button<?php if ( ! $key )
-						echo ' collapsed' ?>" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $key ?>-<?php echo $id; ?>"
-                            aria-expanded="false" aria-controls="flush-collapse-<?php echo $key ?>-<?php echo $id; ?>">
-                        <span><?php echo $value['cat'] ?></span>
-                    </button>
-                </h5>
+				<?php if ( $value['cat'] != '' ) { ?>
+                    <h5 class="accordion-header" id="flush-heading-<?php echo $key ?>-<?php echo $id; ?>">
+                        <button class="accordion-button<?php if ( ! $key )
+							echo ' collapsed' ?>" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $key ?>-<?php echo $id; ?>"
+                                aria-expanded="false" aria-controls="flush-collapse-<?php echo $key ?>-<?php echo $id; ?>">
+                            <span><?php echo $value['cat'] ?></span>
+                        </button>
+                    </h5>
+				<?php } ?>
                 <div id="flush-collapse-<?php echo $key ?>-<?php echo $id; ?>"
                      class="accordion-collapse collapse<?php if ( ! $key )
 					     echo ' show' ?>"
@@ -29,7 +31,11 @@ $id = fw_unique_increment();
 						<?php foreach ( $value['link-items'] as $link ) { ?>
                             <div class="link">
                                 <div class="name"><?php echo $link['name'] ?></div>
-                                <a href="<?php echo $link['url'] ?>" class="btn btn-sm btn-outline-info" target="_blank">View</a>
+                                <a href="<?php echo $link['url'] ?>" class="btn btn-sm btn-outline-info" target="_blank"><?php if ( isset ( $value['btn_text'] ) ) {
+										echo $value['btn_text'];
+									} else {
+										echo "View";
+									} ?></a>
                             </div>
 						<?php } ?>
                     </div>

@@ -19,6 +19,11 @@ $options = array(
 				'type'  => 'text',
 				'label' => __( 'Category', 'fw' ),
 			),
+			'btn_text'   => array(
+				'type'  => 'text',
+				'value' => 'View',
+				'label' => __( 'Button text', 'fw' ),
+			),
 			'link-items' => array(
 				'type'        => 'addable-box',
 				'label'       => __( 'Links', 'fw' ),

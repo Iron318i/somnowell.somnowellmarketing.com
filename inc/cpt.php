@@ -92,7 +92,7 @@ function prevent_slug_duplicates( $slug, $post_ID, $post_status, $post_type, $po
 		$practioner_match = get_page_by_path( $slug, 'OBJECT', 'practioner' );
 
 		if ( $practioner_match ) {
-			$slug .= '-duplicate';
+			//	$slug .= '-duplicate';
 		}
 	}
 

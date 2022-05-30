@@ -57,6 +57,8 @@ if ( ! function_exists( 'somnowell_setup' ) ) {
 				'about-us'          => __( 'About US', 'somnowell' ),
 				'contact'           => __( 'Contact', 'somnowell' ),
 				'blog'              => __( 'Blog', 'somnowell' ),
+				'portal'            => __( 'Portal', 'somnowell' ),
+				'partner-area'      => __( 'Practitioner area', 'somnowell' ),
 			)
 		);
 
