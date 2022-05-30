@@ -18,8 +18,8 @@ get_header();
 						while ( have_posts() ) {
 							the_post();
 							?>
-                            <h1 class="text-uppercase">Contact Form for Dr. Kevin O'Boyle</h1>
-                            <p class="fsz-24">Please use the online form below to contact this Platinum Somnowell Practitioner.</p>
+                            <h1 class="text-uppercase">Contact Form for <?php the_title(); ?></h1>
+                            <p class="fsz-24">Please use the online form below to contact this Somnowell Practitioner.</p>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="mb-1">
@@ -50,6 +50,9 @@ get_header();
 											<?php if ( isset( $person['badges']["finance"] ) ) { ?>
                                                 <span class="badge finance">Finance</span>
 											<?php } ?>
+											<?php if ( isset( $person['badges']["fullrange"] ) ) { ?>
+                                                <span class="badge fullrange">Full range</span>
+											<?php } ?>
                                         </p>
 										<?php if ( $person['specification'] != '' ) { ?>
                                             <p><?php echo $person['specification'] ?></p>
@@ -57,6 +60,10 @@ get_header();
 									<?php } ?>
                                 </div>
                                 <div class="col-sm-6">
+									<?php if ( fw_get_db_post_option( $post->ID, 'pricing' ) != '' ) { ?>
+                                        <p><strong class="text-info">Pricing</strong></p>
+										<?php echo fw_get_db_post_option( $post->ID, 'pricing' ) ?>
+									<?php } ?>
                                     <p><strong class="text-info">Address and Contact Details </strong></p>
 									<?php echo fw_get_db_post_option( $post->ID, 'contact_details' ) ?>
 									<?php if ( fw_get_db_post_option( $post->ID, 'add_text' ) != '' ) { ?>

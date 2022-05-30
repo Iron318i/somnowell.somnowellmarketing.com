@@ -37,6 +37,7 @@ $options = array(
 							'gold'      => __( 'Gold', '{domain}' ),
 							'platinum'  => __( 'Platinum', '{domain}' ),
 							'finance'   => __( 'Finance', '{domain}' ),
+							'fullrange' => __( 'Full Range', '{domain}' ),
 						),
 						'inline'  => true,
 					)
@@ -45,6 +46,10 @@ $options = array(
 				'limit'           => 0, // limit the number of boxes that can be added
 				'add-button-text' => __( 'Add', '{domain}' ),
 				'sortable'        => true,
+			),
+			'pricing'         => array(
+				'type'  => 'wp-editor',
+				'label' => __( 'Pricing', 'fw' ),
 			),
 			'contact_details' => array(
 				'type'  => 'wp-editor',
