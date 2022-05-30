@@ -7940,6 +7940,7 @@
     $('.sidebar .nav > .menu-item').hover(function () {
       $(this).children(".sub-menu").slideDown();
     });
+    $("#main-menu .dropdown > a").one("click", false);
 
     if ($('#regionsDropdown').length) {
       const tpl = '<select id="regionsSelect" class="form-select"><option value="all" selected>All Regions</option>{{contents}}</select>';
@@ -7958,7 +7959,5 @@
         }
       });
     }
-
-    $("#main-menu .dropdown > a").one("click", false);
   });
 }(jQuery);

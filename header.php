@@ -34,20 +34,20 @@ defined( 'ABSPATH' ) || exit;
                 <div class="dropdown">
                     <a class=" dropdown-toggle" href="#" role="button" id="dropdownLocations" data-bs-toggle="dropdown" aria-expanded="false">International</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-australia">Australia</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-belgium">Belgium</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-brazil">Brazil</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-channel-islands">Channel Islands</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-germany">Germany</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-ireland">Ireland</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-isle-man">Isle of Man</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-israel">Israel</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-italy">Italy</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-malaysia">Malaysia</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-new-zealand">New Zealand</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-switzerland">Switzerland</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com/somnowell-practitioners-thailand">Thailand</a></li>
-                        <li><a class="dropdown-item" href="https://www.somnowell.com">United Kingdom</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5107 ); ?>">Australia</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5103 ); ?>">Belgium</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5099 ); ?>">Brazil</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5095 ); ?>">Channel Islands</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5091 ); ?>">Germany</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5048 ); ?>">Ireland</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5044 ); ?>">Isle of Man</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5039 ); ?>">Israel</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5035 ); ?>">Italy</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5031 ); ?>">Malaysia</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5027 ); ?>">New Zealand</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5020 ); ?>">Switzerland</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5016 ); ?>">Thailand</a></li>
+                        <li><a class="dropdown-item" href="<?php the_permalink( 5133 ); ?>">United Kingdom</a></li>
                     </ul>
                 </div>
             </div>
