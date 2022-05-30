@@ -7937,8 +7937,14 @@
         $('#epworthResault').text(':'.$sum);
       }
     });
-    $('.sidebar .nav > .menu-item').hover(function () {
-      $(this).children(".sub-menu").slideDown();
+    var timer;
+    $(".sidebar .nav > .menu-item").mouseenter(function () {
+      var that = this;
+      timer = setTimeout(function () {
+        $(that).children(".sub-menu").slideDown();
+      }, 500);
+    }).mouseleave(function () {
+      clearTimeout(timer);
     });
     $("#main-menu .dropdown > a").one("click", false);
 
