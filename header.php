@@ -69,6 +69,11 @@ defined( 'ABSPATH' ) || exit;
                 <span class="toggle-text">Menu</span>
             </button>
             <div id="navbarNavDropdown" class="collapse navbar-collapse">
+                <button class="close-mobile-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="icon">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </button>
 				<?php
 				wp_nav_menu(
 					array(
