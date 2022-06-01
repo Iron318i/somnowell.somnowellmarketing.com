@@ -32,7 +32,9 @@ switch ( get_page_template_slug() ) {
 	case 'page-templates/partner-area.php':
 		$theme_location = "partner-area";
 		break;
-
+	case 'page-templates/introductory-course.php':
+		$theme_location = "introductory-course";
+		break;
 };
 wp_nav_menu(
 	array(

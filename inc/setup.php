@@ -47,18 +47,19 @@ if ( ! function_exists( 'somnowell_setup' ) ) {
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary'           => __( 'Primary Menu', 'somnowell' ),
-				'copyright'         => __( 'Footer Info', 'somnowell' ),
-				'footer-1'          => __( 'Footer Patients', 'somnowell' ),
-				'footer-2'          => __( 'Footer Practitioners', 'somnowell' ),
-				'somnowell-range'   => __( 'Somnowell Range', 'somnowell' ),
-				'for-patients'      => __( 'For Patients', 'somnowell' ),
-				'for-practitioners' => __( 'For Practitioners', 'somnowell' ),
-				'about-us'          => __( 'About US', 'somnowell' ),
-				'contact'           => __( 'Contact', 'somnowell' ),
-				'blog'              => __( 'Blog', 'somnowell' ),
-				'portal'            => __( 'Portal', 'somnowell' ),
-				'partner-area'      => __( 'Practitioner area', 'somnowell' ),
+				'primary'             => __( 'Primary Menu', 'somnowell' ),
+				'copyright'           => __( 'Footer Info', 'somnowell' ),
+				'footer-1'            => __( 'Footer Patients', 'somnowell' ),
+				'footer-2'            => __( 'Footer Practitioners', 'somnowell' ),
+				'somnowell-range'     => __( 'Somnowell Range', 'somnowell' ),
+				'for-patients'        => __( 'For Patients', 'somnowell' ),
+				'for-practitioners'   => __( 'For Practitioners', 'somnowell' ),
+				'about-us'            => __( 'About US', 'somnowell' ),
+				'contact'             => __( 'Contact', 'somnowell' ),
+				'blog'                => __( 'Blog', 'somnowell' ),
+				'portal'              => __( 'Portal', 'somnowell' ),
+				'partner-area'        => __( 'Practitioner area', 'somnowell' ),
+				'introductory-course' => __( 'Introductory Course', 'somnowell' ),
 			)
 		);
 
