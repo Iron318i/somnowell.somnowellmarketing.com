@@ -676,3 +676,8 @@ textarea.code {
   font-size: rem(15px);
   border-color: #ddd;
 }
+#certification-test {
+  .wpcf7 {
+    display: none;
+  }
+}

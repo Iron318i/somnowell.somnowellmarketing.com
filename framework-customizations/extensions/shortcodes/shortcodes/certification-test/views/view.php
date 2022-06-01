@@ -355,67 +355,67 @@ $c = 0;
         <p>a) The Dentist</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q23a">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q23a">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q23a">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q23a">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>b) The General Medical Practitioner</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q23b">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q23b">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q23b">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q23b">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>c) An Ear Nose and Throat (ENT) surgeon without a special interest in sleep related breathing disorders</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q23c">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q23c">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q23c">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q23c">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>d) A sleep centre</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q23d">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q23d">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q23d">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q23d">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>e) Chest / Sleep Physicians</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q23e">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q23e">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q23e">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q23e">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>f) General Physicians</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q23f">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q23f">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q23f">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q23f">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
     </div>
@@ -621,56 +621,56 @@ $c = 0;
         <p>1) Do you have difficulty breathing through your nose?</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q41a">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q41a">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q41a">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q41a">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>2) Do you suffer from Obstructive Sleep Apnoea?</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q41b">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q41b">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q41b">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q41b">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>3) Do you snore?</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q41c">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q41c">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q41c">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q41c">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>4) Do you feel sleepy during the day?</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q41d">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q41d">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q41d">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q41d">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
         <p>5) Do you suffer from "ringing in the ears" (tinnitus)?</p>
         <div class="ans">
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="T" name="q41e">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">True</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="Y" name="q41e">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">Yes</label>
             </div>
             <div class="form-check">
-                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="F" name="q41e">
-                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">False</label>
+                <input id="<?php echo 'radio-' . ++ $c ?>" type="radio" class="radio form-check-input" value="N" name="q41e">
+                <label class="form-check-label" for="<?php echo 'radio-' . $c ?>">No</label>
             </div>
         </div>
     </div>
@@ -856,9 +856,9 @@ $c = 0;
     </div>
 </div>
 <div class="submition mb-2">
-    <input id="btnSuitabilityCalculate" type="button" class="btn btn-primary mb-1" value="Calculate" name="b1">
+    <input id="subscore" type="button" class="btn btn-primary mb-1" value="Calculate" name="b1">
 </div>
-<div class="scoring-wrapper wpcf7">
-    <div class="scoring h2">Your suitability is</div>
-    <div class="scoring-txt"><!--1-6 = Congratulations, you are getting enough sleep!<br>7-8 = Your score is average<br>9 and up = Seek the advice of a sleep specialist without delay-->* The only results are either OK or UNSURE. The results are only an indication based on the answers you provided.</div>
+<div class="epworth-score-wrapper wpcf7" style="display: none">
+    <div class="scoring h2">Your test score is <span class="txt-epworth-score"></span></div>
 </div>
+<p>A successful course completion certificate can only be issued when you have answered all the questions correctly and acheived a score of 42/42. Incorrect answers will be marked in red after you have pressed the Calculate Score button. Please correct the the incorrect answers and press Calculate Score again. Repeat until you have a score of 42/42.</p>
