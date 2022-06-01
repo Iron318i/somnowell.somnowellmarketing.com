@@ -117,6 +117,7 @@ svg.icon {
       }
     }
   }
+  #menu-introductory-course,
   #menu-practitioner-area,
   #menu-for-patients {
     .sub-menu {
@@ -685,4 +686,9 @@ textarea.code {
   margin-top: .5rem;
   font-size: rem(14px);
   font-weight: 700;
+}
+.parent-pageid-5271 {
+  .hide-partner-area {
+    display: none;
+  }
 }

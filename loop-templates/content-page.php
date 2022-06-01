@@ -15,10 +15,21 @@ defined( 'ABSPATH' ) || exit;
 
 				<?php
 				if ( fw_get_db_post_option( get_the_ID(), 'page_id' ) ) {
-					$content_page_ID = fw_get_db_post_option( $post->ID, 'page_id' )[0];
-					echo "<pre>" . htmlentities( get_post_field( 'post_content', $content_page_ID ) ) . "</pre>";
-					echo '<hr>';
-					echo get_post_field( 'post_content', $content_page_ID );
+					$content_page_ID = fw_get_db_post_option( $post->ID, 'page_id' );
+					$args            = array(
+						'posts_per_page' => 1,
+						'post_type'      => 'page',
+						'page_id'        => $content_page_ID,
+
+					);
+					$query           = new WP_Query( $args );
+					if ( $query->have_posts() ) :
+						while ( $query->have_posts() ) :
+							$query->the_post();
+							the_content();
+						endwhile;
+					endif;
+					wp_reset_postdata();
 				} else {
 					the_content();
 				}

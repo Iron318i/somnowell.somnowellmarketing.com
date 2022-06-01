@@ -25,11 +25,8 @@ $options = array(
 		'type'    => 'box',
 		'options' => array(
 			'page_id' => array(
-				'label'      => 'Get Content from another Page',
-				'type'       => 'multi-select',
-				'population' => 'posts',
-				'source'     => 'page',
-				'limit'      => 1
+				'label' => 'Get Content from Page ID',
+				'type'  => 'text',
 			),
 		),
 		'title'   => __( 'Page Options', '{domain}' ),
