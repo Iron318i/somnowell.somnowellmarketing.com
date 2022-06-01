@@ -21,4 +21,17 @@ $options = array(
 		),
 		'title'   => __( 'Banners', '{domain}' ),
 	),
+	'page-options'    => array(
+		'type'    => 'box',
+		'options' => array(
+			'page_id' => array(
+				'label'      => 'Get Content from another Page',
+				'type'       => 'multi-select',
+				'population' => 'posts',
+				'source'     => 'page',
+				'limit'      => 1
+			),
+		),
+		'title'   => __( 'Page Options', '{domain}' ),
+	),
 );

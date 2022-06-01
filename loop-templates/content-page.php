@@ -12,10 +12,20 @@ defined( 'ABSPATH' ) || exit;
     <div class="row wrapper flex-md-row-reverse">
         <div class="col-auto main-content">
             <div class="entry-content">
-				<?php the_content(); ?>
+
+				<?php
+				if ( fw_get_db_post_option( get_the_ID(), 'page_id' ) ) {
+					$content_page_ID = fw_get_db_post_option( $post->ID, 'page_id' )[0];
+					echo "<pre>" . htmlentities( get_post_field( 'post_content', $content_page_ID ) ) . "</pre>";
+					echo '<hr>';
+					echo get_post_field( 'post_content', $content_page_ID );
+				} else {
+					the_content();
+				}
+				?>
             </div>
             <footer class="entry-footer">
-				<?php edit_post_link( __( 'Edit', 'mrprime' ), '<span class="edit-link">', '</span>' ); ?>
+				<?php edit_post_link( __( 'Edit', 'somnowell' ), '<span class="edit-link">', '</span>' ); ?>
             </footer>
         </div>
         <div class="col-auto sidebar">

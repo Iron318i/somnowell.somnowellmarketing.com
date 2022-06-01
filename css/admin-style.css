@@ -13,9 +13,6 @@ and open the template in the editor.
 .fw-backend-option-type-addable-box .fw-pull-left {
     float: none !important;
 }
-.page-builder-hide-button {
-    display: none !important;
-}
 .fw-backend-option-design-default > .fw-backend-option-input.width-type-fixed > .fw-inner, .fw-backend-option-design-customizer > .fw-backend-option-input.width-type-fixed > .fw-inner, .fw-backend-option-fixed-width {
     max-width: none !important;
 }

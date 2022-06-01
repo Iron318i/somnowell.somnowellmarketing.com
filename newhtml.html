@@ -1,10 +1,13 @@
-<h2>Please enter your full name and email in the web form below and press Submit. Thank you.</h2>
+<h2>Ask Professor Ash a Question</h2>
+<p>All answers are approved by Professor Ash. Please submit your questions at the end of the video.</p>
 <div class="row">
     <div class="col-md-6">
-        <div>[text* i-full-name class:form-control placeholder "Full Name"]</div>
+        <div>[text* i-first-name class:form-control default:user_first_name placeholder "Your First Name"]</div>
+        <div>[text* i-last-name class:form-control default:user_last_name placeholder "Your Last Name"]</div>
+        <div>[email* i-email class:form-control default:user_email placeholder "Your Email"]</div>
     </div>
     <div class="col-md-6">
-        <div>[email* i-email class:form-control placeholder "Email"]</div>
+        <div>[textarea* i-questions class:form-control placeholder "Your Questions"]</div>
     </div>
 </div>
 <div class=" my-1">[submit class:btn class:btn-primary "Submit"]</div>
