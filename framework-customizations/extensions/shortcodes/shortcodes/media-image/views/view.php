@@ -34,6 +34,9 @@ switch ( $atts['margin_bottom'] ) {
 echo '<div class="img-box ' . $custome_class . '">';
 if ( empty( $atts['image_mobile'] ) ) {
 	echo wp_get_attachment_image( $atts['image']["attachment_id"], $atts['image_size'], false, array( "class" => 'img-fluid' ) );
+	if ( $atts["caption"] != '' ) {
+		echo '<div class="caption">' . $atts["caption"] . '</div>';
+	}
 } else {
 	?>
     <picture>
@@ -42,5 +45,8 @@ if ( empty( $atts['image_mobile'] ) ) {
         <img src="<?php echo wp_get_attachment_image_url( $atts['image']["attachment_id"], 'large' ) ?>" alt="<?php echo get_post_meta( $atts['image']["attachment_id"], '_wp_attachment_image_alt', true ); ?>">
     </picture>
 	<?php
+	if ( $atts["caption"] != '' ) {
+		echo '<div class="caption">' . $atts["caption"] . '</div>';
+	}
 }
 echo '</div>';

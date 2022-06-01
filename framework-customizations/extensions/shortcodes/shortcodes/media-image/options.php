@@ -33,6 +33,10 @@ $options = array(
 			'step' => 1, // Set slider step. Always > 0. Could be fractional.
 		),
 	),
+	'caption'       => array(
+		'type'  => 'text',
+		'label' => __( 'Caption', 'fw' ),
+	),
 	'img_class'     => array(
 		'type'  => 'text',
 		'label' => __( 'Image Class', 'fw' ),
