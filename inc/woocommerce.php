@@ -194,7 +194,33 @@ function somnowell_excerpt_in_product_archives() {
 	echo '<div class="excerpt">';
 	the_excerpt();
 	echo '</div>';
-
 }
 
 add_action( 'woocommerce_after_shop_loop_item_title', 'somnowell_excerpt_in_product_archives', 5 );
+
+function somnowell_price_btn_wrp_start() {
+	echo '<div class="row justify-content-between align-items-center"><div class="col-sm-auto">';
+}
+
+add_action( 'woocommerce_after_shop_loop_item_title', 'somnowell_price_btn_wrp_start', 5 );
+
+function somnowell_price_btn_wrp_center() {
+
+	echo '</div><div class="col-sm-auto">';
+}
+
+add_action( 'woocommerce_after_shop_loop_item_title', 'somnowell_price_btn_wrp_center', 15 );
+
+function somnowell_price_btn_wrp_end() {
+	echo '</div></div>';
+}
+
+add_action( 'woocommerce_after_shop_loop_item', 'somnowell_price_btn_wrp_end', 20 );
+
+remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+
+add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 5 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 20 );
+add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 5 );
+add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 15 );
