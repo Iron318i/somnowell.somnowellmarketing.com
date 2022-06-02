@@ -122,8 +122,19 @@ get_header( 'shop' );
 						do_action( 'woocommerce_sidebar' );
 						?>
                     </div>
-                    <div class="col-auto sidebar">
-                    </div>
+                </div>
+                <div class="col-auto sidebar">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'shop',
+							'menu_class'     => 'nav flex-column mb-lg-3',
+						)
+					);
+					if ( is_active_sidebar( 'main-sidebar' ) ) {
+						dynamic_sidebar( 'main-sidebar' );
+					}
+					?>
                 </div>
             </div>
 		<?php endif; ?>

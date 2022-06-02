@@ -33,8 +33,8 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wr
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 
 // Then hook in your own functions to display the wrappers your theme requires.
-add_action( 'woocommerce_before_main_content', 'somnowell_woocommerce_wrapper_start', 10 );
-add_action( 'woocommerce_after_main_content', 'somnowell_woocommerce_wrapper_end', 10 );
+//add_action( 'woocommerce_before_main_content', 'somnowell_woocommerce_wrapper_start', 10 );
+//add_action( 'woocommerce_after_main_content', 'somnowell_woocommerce_wrapper_end', 10 );
 
 if ( ! function_exists( 'somnowell_woocommerce_wrapper_start' ) ) {
 
@@ -174,12 +174,27 @@ add_action( 'init', 'disable_woo_commerce_sidebar' );
 add_filter( 'woocommerce_before_main_content', 'remove_breadcrumbs' );
 
 function remove_breadcrumbs() {
-	if ( is_shop() ) {
-		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
-	}
+	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }
 
 remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10, 2 );
 remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10, 2 );
 
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+add_action( 'after_setup_theme', 'my_remove_product_result_count', 99 );
+function my_remove_product_result_count() {
+	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_result_count', 20 );
+}
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+function somnowell_excerpt_in_product_archives() {
+	echo '<div class="excerpt">';
+	the_excerpt();
+	echo '</div>';
+
+}
+
+add_action( 'woocommerce_after_shop_loop_item_title', 'somnowell_excerpt_in_product_archives', 5 );
