@@ -21,6 +21,7 @@ $somnowell_includes = array(
 	'/disable-comments.php',
 	'/widgets.php',
 	'/cpt.php',
+	'/woocommerce.php',
 );
 
 foreach ( $somnowell_includes as $file ) {

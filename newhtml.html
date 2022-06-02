@@ -1,13 +1,35 @@
-<h2>Ask Professor Ash a Question</h2>
-<p>All answers are approved by Professor Ash. Please submit your questions at the end of the video.</p>
+<p>You have gained CME/CPD credits for attending this course. Please complete this questionnaire so that we can gain valuable information on how to improve future courses.</p>
 <div class="row">
     <div class="col-md-6">
-        <div>[text* i-first-name class:form-control default:user_first_name placeholder "Your First Name"]</div>
-        <div>[text* i-last-name class:form-control default:user_last_name placeholder "Your Last Name"]</div>
-        <div>[email* i-email class:form-control default:user_email placeholder "Your Email"]</div>
-    </div>
-    <div class="col-md-6">
-        <div>[textarea* i-questions class:form-control placeholder "Your Questions"]</div>
+        <div>[text i-name class:form-control placeholder "Your Name (Optional)"]</div>
+        <div>[text i-grade class:form-control placeholder "Grade"]</div>
     </div>
 </div>
-<div class=" my-1">[submit class:btn class:btn-primary "Submit"]</div>
+<p>RATING SYSTEM: strongly agree 5....4....3....2....1 strongly disagree</p>
+<div><label class="form-label">The course was relevant to my educational needs:</label>
+    [radio radio-relevant use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div><label class="form-label">I learnt a great deal from this course:</label>
+    [radio radio-great-deal use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div><label class="form-label">The course was very well structured:</label>
+    [radio radio-structured use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div><label class="form-label">The organisation of the course was efficient:</label>
+    [radio radio-organisation use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div><label class="form-label">The speakers communicated effectively:</label>
+    [radio radio-speakers use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div><label class="form-label">The information was well presented:</label>
+    [radio radio-information use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div><label class="form-label">The course recognised some commercial bias:</label>
+    [radio radio-commercial-bias use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div><label class="form-label">This course will change my clinical practice</label>
+    [radio radio-practice use_label_element "5" "4" "3" "2" "1"]
+</div>
+<div>[textarea i-coments x4 class:form-control placeholder "Comments"]</div>
+
+<div class=" my-1">[submit class:btn class:btn-primary "Continue"]</div>

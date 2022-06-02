@@ -118,6 +118,7 @@ svg.icon {
     }
   }
   #menu-introductory-course,
+  #menu-advanced-course,
   #menu-practitioner-area,
   #menu-for-patients {
     .sub-menu {
@@ -690,5 +691,16 @@ textarea.code {
 .parent-pageid-5271 {
   .hide-partner-area {
     display: none;
+  }
+}
+#webshop {
+  .fw-divider-line hr {
+    margin-bottom: 2rem;
+    color: #dddddd;
+  }
+  .text-center {
+    .btn-wrp {
+      display: inline-block;
+    }
   }
 }

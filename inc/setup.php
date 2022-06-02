@@ -60,6 +60,7 @@ if ( ! function_exists( 'somnowell_setup' ) ) {
 				'portal'              => __( 'Portal', 'somnowell' ),
 				'partner-area'        => __( 'Practitioner area', 'somnowell' ),
 				'introductory-course' => __( 'Introductory Course', 'somnowell' ),
+				'advanced'            => __( 'Advanced Course', 'somnowell' ),
 			)
 		);
 

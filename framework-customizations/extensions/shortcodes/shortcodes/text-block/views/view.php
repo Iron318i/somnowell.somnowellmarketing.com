@@ -8,7 +8,7 @@ if ( ! defined( 'FW' ) ) {
  */
 $style = '';
 if ( $atts['mw'] > 0 ) {
-	$style = 'style="max-width: ' . $atts['mw'] / 16 . 'rem"';
+	$style = 'style="max-width: ' . $atts['mw'] / 18 . 'rem"';
 }
 $custome_class = ( isset( $atts['class'] ) && $atts['class'] ) ? ' ' . $atts['class'] . '' : '';
 $custome_class .= ( $atts['centered'] ) ? ' mx-auto' : '';

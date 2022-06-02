@@ -38,6 +38,7 @@ $options = array(
 			'primary'         => __( 'Primary', 'fw' ),
 			'outline-primary' => __( 'Primary outline', 'fw' ),
 			'info'            => __( 'Info', 'fw' ),
+			'outline-info'    => __( 'Info outline', 'fw' ),
 			'link'            => __( 'Link', 'fw' ),
 		)
 	),

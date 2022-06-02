@@ -35,6 +35,9 @@ switch ( get_page_template_slug() ) {
 	case 'page-templates/introductory-course.php':
 		$theme_location = "introductory-course";
 		break;
+	case 'page-templates/advanced.php':
+		$theme_location = "advanced";
+		break;
 };
 wp_nav_menu(
 	array(
