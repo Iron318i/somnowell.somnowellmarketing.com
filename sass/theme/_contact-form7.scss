@@ -55,6 +55,12 @@
       color: $primary;
     }
   }
+  .wpcf7-radio {
+    .wpcf7-list-item {
+      display: inline-block;
+      margin-right: .5rem;
+    }
+  }
 }
 @include media-breakpoint-up(md) {
   #wpcf7-f5-p856-o1 {
