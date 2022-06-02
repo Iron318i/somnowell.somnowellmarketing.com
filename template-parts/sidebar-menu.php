@@ -38,6 +38,9 @@ switch ( get_page_template_slug() ) {
 	case 'page-templates/advanced.php':
 		$theme_location = "advanced";
 		break;
+	case 'page-templates/shop.php':
+		$theme_location = "shop";
+		break;
 };
 wp_nav_menu(
 	array(

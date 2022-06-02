@@ -701,6 +701,7 @@ textarea.code {
   .text-center {
     .btn-wrp {
       display: inline-block;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -773,5 +774,27 @@ textarea.code {
   }
   .woocommerce-product-gallery__image:first-child {
     flex: 0 0 100%;
+  }
+}
+.cart {
+  .product-thumbnail {
+    max-width: rem(100px);
+  }
+}
+.cart_totals {
+  max-width: rem(300px);
+  margin-left: auto;
+}
+.input-text {
+  @extend .form-control;
+}
+.woocommerce-checkout {
+  .form-control {
+    border-color: #aeaeae;
+  }
+  .form-row {
+    label {
+      margin-bottom: 5px;
+    }
   }
 }
