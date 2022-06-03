@@ -224,3 +224,9 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loo
 add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 20 );
 add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 5 );
 add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 15 );
+
+add_filter( 'default_checkout_billing_country', 'change_default_checkout_country' );
+
+function change_default_checkout_country() {
+	return 'GB'; // country code
+}
