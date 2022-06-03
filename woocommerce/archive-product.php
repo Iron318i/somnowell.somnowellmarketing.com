@@ -49,7 +49,14 @@ get_header( 'shop' );
 
 						$cat = get_queried_object();
 						if ( is_product_category( array( 37 ) ) || $cat->parent === 37 ) {
-							get_template_part( 'woocommerce/archive-practitioners' );
+							if ( is_user_logged_in() ):
+								get_template_part( 'woocommerce/archive-practitioners' );
+							else:
+								?>
+                                <h1>Sorry, but you do not have permission to view this content.</h1>
+                                <p><a href="<?php echo get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>" class="btn btn-primary">Log In</a></p>
+							<?php
+							endif;
 						} else {
 							?>
                             <header class="woocommerce-products-header">
@@ -130,6 +137,14 @@ get_header( 'shop' );
                 </div>
                 <div class="col-auto sidebar">
 					<?php
+					if ( is_user_logged_in() ) {
+						wp_nav_menu(
+							array(
+								'theme_location' => 'portal',
+								'menu_class'     => 'nav flex-column mb-lg-3',
+							)
+						);
+					}
 					wp_nav_menu(
 						array(
 							'theme_location' => 'shop',

@@ -180,7 +180,6 @@ function remove_breadcrumbs() {
 remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10, 2 );
 remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10, 2 );
 
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 add_action( 'after_setup_theme', 'my_remove_product_result_count', 99 );
 function my_remove_product_result_count() {
@@ -230,3 +229,5 @@ add_filter( 'default_checkout_billing_country', 'change_default_checkout_country
 function change_default_checkout_country() {
 	return 'GB'; // country code
 }
+
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );

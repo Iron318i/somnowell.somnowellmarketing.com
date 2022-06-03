@@ -68,6 +68,14 @@ get_header( 'shop' ); ?>
             </div>
             <div class="col-auto sidebar">
 				<?php
+				if ( is_user_logged_in() ) {
+					wp_nav_menu(
+						array(
+							'theme_location' => 'portal',
+							'menu_class'     => 'nav flex-column mb-lg-3',
+						)
+					);
+				}
 				wp_nav_menu(
 					array(
 						'theme_location' => 'shop',

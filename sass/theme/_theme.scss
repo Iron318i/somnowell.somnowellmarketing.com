@@ -898,12 +898,29 @@ textarea.code {
 .woocommerce-table {
   @extend .table;
 }
-.woocommerce-form-login {
+.woocommerce {
   .form-control {
     border-color: #aeaeae;
+  }
+}
+.woocommerce-form-login {
+  .form-control {
     max-width: rem(400px);
   }
   .woocommerce-form-login__rememberme {
     margin-bottom: 1rem;
+  }
+}
+.woocommerce-MyAccount-navigation {
+  margin-bottom: 1rem;
+  .list-group a {
+    margin-right: 1rem;
+  }
+}
+.wc_payment_methods {
+  list-style: none;
+  padding-left: 0;
+  label {
+    font-weight: 700;
   }
 }
