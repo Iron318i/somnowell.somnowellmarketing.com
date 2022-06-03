@@ -46,6 +46,7 @@ svg.icon {
   }
 }
 .entry-content {
+  margin-bottom: 1rem;
   h1, h2, h3 {
     color: $blue-500;
   }
@@ -79,6 +80,7 @@ svg.icon {
       display: block;
     }
     > li {
+      &.current-menu-item > a,
       &.current-menu-parent > a,
       &.current_page_parent > a,
       &.current_page_item > a {
@@ -784,6 +786,11 @@ textarea.code {
   }
   input.qty {
     width: 70px;
+  }
+  .variation {
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 .cart-collaterals {

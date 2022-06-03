@@ -8274,4 +8274,8 @@
       $('.txt-epworth-score').text(count);
     });
   });
+  var myModal = new bootstrap.Modal(document.getElementById("facebowModal"), {});
+  $('.showFacebowModal').click(function (e) {
+    myModal.show();
+  });
 }(jQuery);

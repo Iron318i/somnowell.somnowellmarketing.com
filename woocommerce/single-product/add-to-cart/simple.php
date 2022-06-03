@@ -45,9 +45,17 @@ if ( $product->is_in_stock() ) : ?>
 		);
 
 		do_action( 'woocommerce_after_add_to_cart_quantity' );
+
+		$child_ids = get_term_children( 37, 'product_cat' );
+		if ( has_term( $child_ids, 'product_cat', $product->get_id() ) ) {
+			$btn_text = 'Place Order';
+		} else {
+			$btn_text = esc_html( $product->single_add_to_cart_text() );
+		}
+
 		?>
 
-        <button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="btn btn-sm btn-outline-info"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+        <button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="btn btn-sm btn-outline-info"><?php echo $btn_text; ?></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
     </form>
