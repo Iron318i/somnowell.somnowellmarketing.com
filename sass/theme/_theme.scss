@@ -780,6 +780,9 @@ textarea.code {
   .product-thumbnail {
     max-width: rem(100px);
   }
+  input.qty {
+    width: 70px;
+  }
 }
 .cart-collaterals {
   margin-bottom: 1rem;
@@ -922,5 +925,31 @@ textarea.code {
   padding-left: 0;
   label {
     font-weight: 700;
+  }
+}
+.single-practitioners {
+  .qty {
+    display: none;
+  }
+}
+.wcpa_form_outer {
+  .wcpa_type_paragraph,
+  .wcpa_type_select,
+  .wcpa_type_date,
+  .wcpa_type_text {
+    padding: 1rem;
+    margin: 0;
+    background-color: #ececec;
+  }
+  .wcpa_form_item + .wcpa_form_item {
+    padding-top: 0;
+  }
+  .wcpa_type_header + .wcpa_form_item {
+    padding-top: 1rem;
+  }
+  .wcpa_type_paragraph {
+    p {
+      margin-bottom: 0;
+    }
   }
 }
