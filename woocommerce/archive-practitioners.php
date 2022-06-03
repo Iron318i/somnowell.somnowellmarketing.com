@@ -34,7 +34,7 @@ $args = array(
 $all_categories = get_categories( $args );
 foreach ( $all_categories as $cat ) {
 	$category_id = $cat->term_id;
-	$args2       = array( 'taxonomy' => $taxonomy, 'parent' => $category_id, 'hierarchical' => $hierarchical, 'orderby' => $orderby, 'order' => $order, 'hide_empty' => $empty );
+	$args2       = array( 'taxonomy' => $taxonomy, 'parent' => $category_id, 'hierarchical' => $hierarchical, 'hide_empty' => $empty );
 	$categories  = get_categories( $args2 );
 
 	echo "<div class='category'><h3>" . $cat->name . "</h3>";

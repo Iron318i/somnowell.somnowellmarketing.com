@@ -144,13 +144,20 @@ get_header( 'shop' );
 								'menu_class'     => 'nav flex-column mb-lg-3',
 							)
 						);
+						wp_nav_menu(
+							array(
+								'theme_location' => 'shop-practitioners',
+								'menu_class'     => 'nav flex-column mb-lg-3',
+							)
+						);
+					} else {
+						wp_nav_menu(
+							array(
+								'theme_location' => 'shop',
+								'menu_class'     => 'nav flex-column mb-lg-3',
+							)
+						);
 					}
-					wp_nav_menu(
-						array(
-							'theme_location' => 'shop',
-							'menu_class'     => 'nav flex-column mb-lg-3',
-						)
-					);
 					if ( is_active_sidebar( 'main-sidebar' ) ) {
 						dynamic_sidebar( 'main-sidebar' );
 					}

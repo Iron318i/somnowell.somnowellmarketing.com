@@ -62,6 +62,7 @@ if ( ! function_exists( 'somnowell_setup' ) ) {
 				'introductory-course' => __( 'Introductory Course', 'somnowell' ),
 				'advanced'            => __( 'Advanced Course', 'somnowell' ),
 				'shop'                => __( 'Shop', 'somnowell' ),
+				'shop-practitioners'  => __( 'Shop Practitioners', 'somnowell' ),
 			)
 		);
 

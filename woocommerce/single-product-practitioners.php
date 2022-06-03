@@ -16,6 +16,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 <div class="single-practitioners">
     <h1><?php the_title() ?> - <?php echo $product->get_price_html(); ?></h1>
     <h3>To place an order please complete the below form.</h3>
+	<?php the_content(); ?>
     <p><a href="<?php echo wp_get_attachment_url( 5940 ) ?>" class="btn btn-primary" target="_blank">Quick StartGuide</a></p>
 	<?php
 	/**

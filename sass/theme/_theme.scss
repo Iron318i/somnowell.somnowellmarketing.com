@@ -79,6 +79,7 @@ svg.icon {
       display: block;
     }
     > li {
+      &.current-menu-parent > a,
       &.current_page_parent > a,
       &.current_page_item > a {
         font-weight: 700;
@@ -117,6 +118,7 @@ svg.icon {
       }
     }
   }
+  #menu-shop-practitioners,
   #menu-introductory-course,
   #menu-advanced-course,
   #menu-practitioner-area,
@@ -933,23 +935,42 @@ textarea.code {
   }
 }
 .wcpa_form_outer {
-  .wcpa_type_paragraph,
-  .wcpa_type_select,
-  .wcpa_type_date,
-  .wcpa_type_text {
-    padding: 1rem;
+  background-color: #ececec;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  .wcpa_form_item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    label {
+      margin-bottom: .5rem;
+      font-size: rem(16px);
+    }
+    .wcpa_checkbox .wcpa_check {
+      background-color: #fff;
+    }
+    .wcpa_checkbox input[type="checkbox"]:checked + label .wcpa_check {
+      border-color: $info;
+      background: $info;
+    }
+  }
+  .wcpa_type_header {
+    background: #fff;
+    padding: 1rem 0;
     margin: 0;
-    background-color: #ececec;
-  }
-  .wcpa_form_item + .wcpa_form_item {
-    padding-top: 0;
-  }
-  .wcpa_type_header + .wcpa_form_item {
-    padding-top: 1rem;
+    overflow: hidden;
+    h3 {
+      margin-bottom: 0;
+    }
   }
   .wcpa_type_paragraph {
     p {
       margin-bottom: 0;
+    }
+  }
+  .wcpa_type_checkbox-group {
+    > label {
+      display: none;
     }
   }
 }
