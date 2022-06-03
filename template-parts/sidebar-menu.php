@@ -39,7 +39,11 @@ switch ( get_page_template_slug() ) {
 		$theme_location = "advanced";
 		break;
 	case 'page-templates/shop.php':
-		$theme_location = "shop";
+		if ( is_user_logged_in() ) {
+			$theme_location = "shop-practitioners";
+		} else {
+			$theme_location = "shop";
+		}
 		break;
 };
 wp_nav_menu(
