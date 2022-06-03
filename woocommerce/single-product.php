@@ -26,38 +26,43 @@ get_header( 'shop' ); ?>
             <div class="col-auto main-content">
                 <div class="entry-content">
 					<?php
-					/**
-					 * woocommerce_before_main_content hook.
-					 *
-					 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-					 * @hooked woocommerce_breadcrumb - 20
-					 */
-					do_action( 'woocommerce_before_main_content' );
-					?>
+					$child_ids = get_term_children( 37, 'product_cat' );
+					if ( has_term( $child_ids, 'product_cat', $product->get_id() ) ) {
+						wc_get_template_part( 'single-product-practitioners' );
+					} else {
+						/**
+						 * woocommerce_before_main_content hook.
+						 *
+						 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+						 * @hooked woocommerce_breadcrumb - 20
+						 */
+						do_action( 'woocommerce_before_main_content' );
+						?>
 
-					<?php while ( have_posts() ) : ?>
-						<?php the_post(); ?>
+						<?php while ( have_posts() ) : ?>
+							<?php the_post(); ?>
 
-						<?php wc_get_template_part( 'content', 'single-product' ); ?>
+							<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
-					<?php endwhile; // end of the loop. ?>
+						<?php endwhile; // end of the loop. ?>
 
-					<?php
-					/**
-					 * woocommerce_after_main_content hook.
-					 *
-					 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-					 */
-					do_action( 'woocommerce_after_main_content' );
-					?>
+						<?php
+						/**
+						 * woocommerce_after_main_content hook.
+						 *
+						 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+						 */
+						do_action( 'woocommerce_after_main_content' );
+						?>
 
-					<?php
-					/**
-					 * woocommerce_sidebar hook.
-					 *
-					 * @hooked woocommerce_get_sidebar - 10
-					 */
-					do_action( 'woocommerce_sidebar' );
+						<?php
+						/**
+						 * woocommerce_sidebar hook.
+						 *
+						 * @hooked woocommerce_get_sidebar - 10
+						 */
+						do_action( 'woocommerce_sidebar' );
+					}
 					?>
                 </div>
             </div>
