@@ -981,3 +981,24 @@ textarea.code {
     }
   }
 }
+.iconic-list {
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px dashed #aeaeae;
+  }
+  .img {
+    flex: 0 0 auto;
+    max-width: rem(70px);
+  }
+  .text {
+    flex-grow: 1;
+    padding-left: 1rem;
+  }
+  .h3 {
+    color: $body-color;
+    margin-bottom: .5rem;
+    font-weight: 400;
+  }
+}
