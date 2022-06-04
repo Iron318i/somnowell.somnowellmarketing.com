@@ -76,7 +76,7 @@ get_header();
                         <div class="col-auto mb-1"><img src="<?php echo site_url() ?>/wp-content/uploads/2022/05/sert-2.png" alt="Patented"></div>
                         <div class="col-auto mb-1"><img src="<?php echo site_url() ?>/wp-content/uploads/2022/05/sert-3.png" alt="Best Oral Hygiene"></div>
                     </div>
-                    <p><a href="<?php the_permalink( 14 ); ?>" class="btn btn-info d-lg-block">Learn More</a></p>
+                    <p class="learn-more"><a href="<?php the_permalink( 14 ); ?>" class="btn btn-info d-lg-block">Learn More</a></p>
                 </div>
             </div>
         </div>

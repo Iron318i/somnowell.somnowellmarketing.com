@@ -192,25 +192,31 @@
 @include media-breakpoint-down(sm) {
   .main-banner {
     background: url(../img/main-banner-sm.jpg) top center / 100% no-repeat;
+    text-align: center;
     h1 {
-      font-size: vw-sm(30px);
+      font-size: vw-sm(27px);
+      padding: 0 3vw;
     }
     .text {
-      padding-top: 25vw;
+      padding-top: 16vw;
       min-height: 161vw;
-      max-width: 80%;
       .mb-3 {
-        font-size: vw-sm(22px);
+        font-size: vw-sm(19px);
+        margin-bottom: 1rem !important;
       }
     }
     .bottom {
       margin-top: 0;
     }
     .social {
+      text-align: left;
       padding-bottom: 8vw;
       a {
         font-size: 13vw;
       }
+    }
+    .banner-about {
+      text-align: left;
     }
   }
   .img-link {
@@ -219,5 +225,17 @@
   }
   .sidebar {
     width: 100%;
+  }
+  .home-video {
+    padding-top: 1rem !important;
+    img {
+      max-width: 30vw;
+    }
+    .learn-more {
+      text-align: center;
+    }
+    .row.ms-lg-2 {
+      --bs-gutter-x: 0;
+    }
   }
 }
