@@ -16,6 +16,9 @@
   }
 }
 @include media-breakpoint-up(sm) {
+  .hide-sm-up {
+    display: none;
+  }
   .main-banner {
     background: url(../img/main-banner-lg.jpg) top center / cover no-repeat;
   }
@@ -190,6 +193,9 @@
   }
 }
 @include media-breakpoint-down(sm) {
+  .hide-sm-down {
+    display: none;
+  }
   .main-banner {
     background: url(../img/main-banner-sm.jpg) top center / 100% no-repeat;
     text-align: center;
@@ -236,6 +242,13 @@
     }
     .row.ms-lg-2 {
       --bs-gutter-x: 0;
+    }
+  }
+  .home-speak {
+    text-align: center;
+    .wpcf7 {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

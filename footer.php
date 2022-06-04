@@ -54,6 +54,19 @@ defined( 'ABSPATH' ) || exit;
 						);
 						?>
                     </div>
+                    <div class="col-12 order-sm-3">
+                        <h4 class="widget-title hide-sm-up mt-1">LINKS</h4>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'copyright',
+								'menu_class'     => 'nav',
+								'menu_id'        => 'footer-info',
+							)
+						);
+						?>
+                        <div class="copyright hide-sm-down"> © 2018-<?php echo date( "Y" ); ?> Somnowell. All Rights Reserved</div>
+                    </div>
                     <div class="col-sm-4 order-sm-0 col-logo">
                         <a href="<?php echo site_url() ?>" rel="home" class="footer-logo">
                             <img src="<?php echo get_template_directory_uri() ?>/img/footer-logo.png" alt="<?php bloginfo( 'name' ); ?>">
@@ -88,18 +101,7 @@ defined( 'ABSPATH' ) || exit;
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-12 order-sm-3">
-						<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'copyright',
-								'menu_class'     => 'nav',
-								'menu_id'        => 'footer-info',
-							)
-						);
-						?>
-                        <div class="copyright"> © 2018-<?php echo date( "Y" ); ?> Somnowell. All Rights Reserved</div>
+                        <div class="copyright hide-sm-up mt-1"> © 2018-<?php echo date( "Y" ); ?> Somnowell. All Rights Reserved</div>
                     </div>
                 </div>
             </div>

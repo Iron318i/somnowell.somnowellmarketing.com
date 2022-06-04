@@ -264,7 +264,8 @@ $dropdown-item-padding-x: 1rem;
 //$dropdown-border-radius: 0;
 //$dropdown-bg: rgba($blue-600, .96);
 //$dropdown-link-hover-bg: transparent;
-//$dropdown-link-active-bg: transparent;
+$dropdown-link-active-bg: transparent;
+$dropdown-link-active-color: $primary;
 //$dropdown-link-color: #fff;
 //$dropdown-link-hover-color: rgba(#fff, .7);
 // Pagination
