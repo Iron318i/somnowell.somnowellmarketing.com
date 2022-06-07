@@ -52,7 +52,7 @@ $id = fw_unique_increment();
 				<?php if ( isset( $value['practioner_id'][0] ) ) { ?>
                     <a href="<?php the_permalink( $value['practioner_id'][0] ); ?>" class="btn btn-sm btn-outline-info">View</a>
 				<?php } else { ?>
-                    <a href="<?php the_permalink( 5012 ); ?>?dr=<?php echo urlencode( $value['name'] ) ?>" class="btn btn-sm btn-outline-info">Contact</a>
+                    <a href="<?php the_permalink( 5012 ); ?>?dr=<?php echo urlencode( $value['persons'][0]["name"] ) ?>" class="btn btn-sm btn-outline-info">Contact</a>
 				<?php } ?>
             </div>
         </div>

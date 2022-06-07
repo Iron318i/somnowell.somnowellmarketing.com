@@ -122,6 +122,20 @@ defined( 'ABSPATH' ) || exit;
         }(jQuery);
     </script>
 <?php } ?>
+<?php if ( is_page( 5012 ) ) {
+	$dr_name = '';
+	if ( isset( $_GET['dr'] ) ) {
+		$dr_name = $_GET['dr'];
+	}
+	?>
+    <script>
+        +function ($) {
+            $(document).ready(function () {
+                $('#practionerName').val('<?php echo $dr_name; ?>');
+            });
+        }(jQuery);
+    </script>
+<?php } ?>
 <?php echo fw_get_db_settings_option( 'before_body' ) ?>
 </body>
 </html>
