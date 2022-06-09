@@ -5,7 +5,7 @@
  * @package somnowell
  */
 // Exit if accessed directly.
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
@@ -14,11 +14,11 @@ get_header();
             <div class="row gx-2">
 
                 <div class="col-12 text-center">
-                    <div class="fw-heading fw-heading-h1 text-center text-white">
+                    <div class="fw-heading fw-heading-h1 text-center">
                         <h1 class="fw-special-title text-uppercase mb-1"><?php echo 'Search'; ?></h1>
                     </div>
-                    <div class="mb-0">
-                        <?php get_search_form(); ?>
+                    <div class="mb-0 wpcf7">
+						<?php get_search_form(); ?>
                     </div>
                 </div>
 
@@ -30,29 +30,29 @@ get_header();
             <h2 class="fw-special-title text-uppercase text-primary"><?php echo 'RESULTS'; ?></h2>
         </div>
 
-        <?php if (have_posts()) : ?>
-            <?php /* Start the Loop */ ?>
-            <?php
-            while (have_posts()) :
-                the_post();
+		<?php if ( have_posts() ) : ?>
+			<?php /* Start the Loop */ ?>
+			<?php
+			while ( have_posts() ) :
+				the_post();
 
-                /*
-                 * Run the loop for the search to output the results.
-                 * If you want to overload this in a child theme then include a file
-                 * called content-search.php and that will be used instead.
-                 */
-                get_template_part('loop-templates/content', 'search');
-            endwhile;
-            ?>
+				/*
+				 * Run the loop for the search to output the results.
+				 * If you want to overload this in a child theme then include a file
+				 * called content-search.php and that will be used instead.
+				 */
+				get_template_part( 'loop-templates/content', 'search' );
+			endwhile;
+			?>
 
-        <?php else : ?>
-            <?php get_template_part('loop-templates/content', 'none'); ?>
+		<?php else : ?>
+			<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-        <?php endif; ?>
+		<?php endif; ?>
 
 
         <!-- The pagination component -->
-        <?php somnowell_pagination(); ?>
+		<?php somnowell_pagination(); ?>
 
     </div>
 <?php

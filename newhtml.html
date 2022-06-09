@@ -1,35 +1,15 @@
-<p>You have gained CME/CPD credits for attending this course. Please complete this questionnaire so that we can gain valuable information on how to improve future courses.</p>
 <div class="row">
     <div class="col-md-6">
-        <div>[text i-name class:form-control placeholder "Your Name (Optional)"]</div>
-        <div>[text i-grade class:form-control placeholder "Grade"]</div>
+        <div>[text* i-practitioner-name class:form-control placeholder "Practitioner Name"]</div>
+        <div>[text* i-your-name class:form-control placeholder "Your Name"]</div>
+        <div>[email* i-email class:form-control placeholder "Your Email"]</div>
+        <div>[text* i-phone class:form-control placeholder "Your Telephone"]</div>
+        <div>[checkbox checkbox-details use_label_element "I'm happy for these details to be passed on to this Somnowell Practitioner"]</div>
+    </div>
+    <div class="col-md-6">
+        <div>[textarea i-message class:form-control placeholder "Additional Message"]</div>
+        <div>[text i-preferred-dates class:form-control placeholder "My preferred dates / days / times are"]</div>
+        <div>[checkbox checkbox-consultation use_label_element "I am interested in a consultation"]</div>
     </div>
 </div>
-<p>RATING SYSTEM: strongly agree 5....4....3....2....1 strongly disagree</p>
-<div><label class="form-label">The course was relevant to my educational needs:</label>
-    [radio radio-relevant use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div><label class="form-label">I learnt a great deal from this course:</label>
-    [radio radio-great-deal use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div><label class="form-label">The course was very well structured:</label>
-    [radio radio-structured use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div><label class="form-label">The organisation of the course was efficient:</label>
-    [radio radio-organisation use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div><label class="form-label">The speakers communicated effectively:</label>
-    [radio radio-speakers use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div><label class="form-label">The information was well presented:</label>
-    [radio radio-information use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div><label class="form-label">The course recognised some commercial bias:</label>
-    [radio radio-commercial-bias use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div><label class="form-label">This course will change my clinical practice</label>
-    [radio radio-practice use_label_element "5" "4" "3" "2" "1"]
-</div>
-<div>[textarea i-coments x4 class:form-control placeholder "Comments"]</div>
-
-<div class=" my-1">[submit class:btn class:btn-primary "Continue"]</div>
+<div class="my-1">[submit class:btn class:btn-primary "Contact"]</div>

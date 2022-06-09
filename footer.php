@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
                             <p>Here is an easy way to quickly learn everything you need to know about the Somnowel</p>
                         </div>
                         <div class="btn-wrp">
-                            <a href="http://somnowell.somnowellmarketing.com/wp-content/uploads/2022/05/Somnowell_brochure_download.pdf" target="_blank" class="btn btn-outline-info">Download Now</a>
+                            <a href="<?php echo wp_get_attachment_url( 60 ) ?>" target="_blank" class="btn btn-outline-info">Download Now</a>
                         </div>
                     </div>
                     <div class="col-6 col-lg-12 brochure-img">
