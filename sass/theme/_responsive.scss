@@ -160,7 +160,7 @@
       }
     }
     .bottom {
-      margin-top: 13rem;
+      margin-top: 10rem;
     }
     .banner-about {
       margin-top: 11rem;
@@ -182,6 +182,9 @@
         background-color: #fff;
       }
     }
+  }
+  .sidebar .nav {
+    display: none;
   }
 }
 @include media-breakpoint-only(sm) {

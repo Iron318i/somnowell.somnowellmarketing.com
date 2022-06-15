@@ -9,8 +9,8 @@ get_header();
     <section class="main-banner">
         <div class="container">
             <div class="text">
-                <h1>We are dedicated to the aim of continually improving the Somnowell product</h1>
-                <p class="mb-3">thereby bringing a life changing solution to people suffering the effects of problematic snoring and obstructive sleep apnoea.</p>
+                <h1>Introducing the world's leading oral appliance with 93 - 96% success rates! Somnowell …</h1>
+                <p class="mb-3">a life changing solution for people suffering the effects of problematic snoring and obstructive sleep apnoea.</p>
                 <p><a href="/somnowell-practitioners-uk" class="btn btn-lg btn-outline-info">Find a Local Practitioner</a></p>
                 <p><a href="https://uk.trustpilot.com/review/www.somnowell.com?utm_medium=trustbox&utm_source=MicroReviewCount" class="btn btn-lg btn-info" target="_blank">See our reviews on <img src="<?php echo get_template_directory_uri() ?>/img/trustpilot.svg" alt="Trustpilot"></a></p>
             </div>

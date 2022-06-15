@@ -238,7 +238,7 @@
 #toTop {
   position: fixed;
   z-index: 200;
-  bottom: 10%;
+  bottom: 15%;
   right: 1.7%;
   cursor: pointer;
   display: none;
@@ -257,6 +257,9 @@
   &:hover {
     opacity: 1;
   }
+}
+.grecaptcha-badge {
+  bottom: 71px !important;
 }
 @include media-breakpoint-up(sm) {
   .top-bar .links a {

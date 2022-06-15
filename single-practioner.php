@@ -77,7 +77,6 @@ get_header();
 							<?php
 						}
 						echo do_shortcode( '[contact-form-7 id="5056" title="Practioner Contact Form"]' );
-						echo do_shortcode( '[banner_speak demo_text="" demo_textarea="" _fw_coder="aggressive" __fw_editor_shortcodes_id="035cb08cd5707b129055c676a3fdb4c5"][/banner_speak]' );
 						echo do_shortcode( '[recommended_by heading="The Somnowell mandibular advancement appliance is also recommended by:" list="‹º›‹²›Sleep Centres‹²›,‹²›ENT Surgeons, Sleep Physicians, Respiratory, Physicians‹²›,‹²›Orthodontists, Dentists‹²›,‹²›General Medical Practitioners‹²›‹¹›" _array_keys="{‹²›list‹²›:‹²›list‹²›}" _fw_coder="aggressive" __fw_editor_shortcodes_id="37c86525a1b15845aba7a392902ae317"][/recommended_by]' );
 						?>
                     </div>
