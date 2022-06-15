@@ -97,14 +97,10 @@ if ( ! defined( 'FW' ) ) {
     </div>
     <div class="epworth-score-wrapper">
         <div class="h2">
-            Your Epworth score is <span id="epworthResault"></span>
+            <span id="epworthResault"></span>
         </div>
     </div>
-    <div class="epworth-score-wrapper-1">
-        <div class="epworth-score-content-1">
-            <div class="epworth-result-text">
-                <p>1-6 = Congratulations, you are getting enough sleep!<br>7-8 = Your score is average<br>9 and up = Seek the advice of a sleep specialist without delay</p>
-            </div>
-        </div>
+    <div class="epworth-result-text" style="display: none">
+        <p>1-6 = Congratulations, you are getting enough sleep!<br>7-8 = Your score is average<br>9 and up = Seek the advice of a sleep specialist without delay</p>
     </div>
 </form>

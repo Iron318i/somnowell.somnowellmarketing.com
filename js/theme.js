@@ -7918,6 +7918,7 @@
       $("#form-epworth-test")[0].reset();
     });
     $("#btnSleepinessCalculate").click(function () {
+      console.log('btnSleepinessCalculate');
       $sum = 0;
       $notAll = false;
       $('#form-epworth-test .form-select').each(function () {
@@ -7934,7 +7935,8 @@
       if ($notAll) {
         $('#epworthResault').text('(please answer all the questions)');
       } else {
-        $('#epworthResault').text(':'.$sum);
+        $('#epworthResault').text('Your Epworth score is: ' + $sum);
+        $('.epworth-result-text').show();
       }
     });
     var timer;
@@ -8274,8 +8276,11 @@
       $('.txt-epworth-score').text(count);
     });
   });
-  var myModal = new bootstrap.Modal(document.getElementById("facebowModal"), {});
-  $('.showFacebowModal').click(function (e) {
-    myModal.show();
-  });
+
+  if ($('#facebowModal').length) {
+    var myModal = new bootstrap.Modal(document.getElementById("facebowModal"), {});
+    $('.showFacebowModal').click(function (e) {
+      myModal.show();
+    });
+  }
 }(jQuery);
