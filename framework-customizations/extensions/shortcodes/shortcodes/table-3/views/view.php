@@ -34,7 +34,7 @@ if ( ! defined( 'FW' ) ) {
         </tr>
         <tr>
             <td>Somnowell Clear for a patient - Express<br> <span class="text-info">(7 working days production)</span></td>
-            <td>£329.00</td>
+            <td>£429.00</td>
         </tr>
         <tr>
             <td>Somnowell Retainers for a patient - Standard<br> <span class="text-info">(15 working days production)</span></td>

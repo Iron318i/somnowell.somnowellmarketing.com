@@ -115,9 +115,9 @@ defined( 'ABSPATH' ) || exit;
     <script>
         +function ($) {
             $(document).ready(function () {
-                $('.wpcf7-submit').val('Send Message to <?php echo str_replace( '&#8217;', "\'", get_the_title() ); ?>');
+                $('.wpcf7-submit').val('Send Message to <?php echo str_replace( array( '&#8217;', '&#038;' ), array( "\'", "&" ), get_the_title() ); ?>');
                 $('#recipientEmail').val('<?php echo fw_get_db_post_option( $post->ID, 'recipient_email' ) ?>');
-                $('#practionerName').val('<?php the_title(); ?>');
+                $('#practionerName').val('<?php echo str_replace( array( '&#8217;', '&#038;' ), array( "\'", "&" ), get_the_title() ); ?>');
             });
         }(jQuery);
     </script>

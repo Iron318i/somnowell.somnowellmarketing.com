@@ -1,15 +1,15 @@
 <div class="row">
     <div class="col-md-6">
-        <div>[text* i-practitioner-name class:form-control placeholder "Practitioner Name"]</div>
+        <div>[text practioner-name id:practionerName class:form-control readonly]</div>
         <div>[text* i-your-name class:form-control placeholder "Your Name"]</div>
         <div>[email* i-email class:form-control placeholder "Your Email"]</div>
         <div>[text* i-phone class:form-control placeholder "Your Telephone"]</div>
-        <div>[checkbox checkbox-details use_label_element "I'm happy for these details to be passed on to this Somnowell Practitioner"]</div>
+        <div>[checkbox checkbox-consultation use_label_element "I am interested in a consultation"]</div>
+        <div>[text i-preferred-dates class:form-control placeholder "My preferred dates / days / times are:"]</div>
     </div>
     <div class="col-md-6">
         <div>[textarea i-message class:form-control placeholder "Additional Message"]</div>
-        <div>[text i-preferred-dates class:form-control placeholder "My preferred dates / days / times are"]</div>
-        <div>[checkbox checkbox-consultation use_label_element "I am interested in a consultation"]</div>
     </div>
 </div>
-<div class="my-1">[submit class:btn class:btn-primary "Contact"]</div>
+<div class="d-none">[text recipient-email id:recipientEmail readonly]</div>
+<div class="my-1">[submit class:btn class:btn-primary "Submit"]</div>
