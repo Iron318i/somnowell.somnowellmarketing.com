@@ -76,10 +76,16 @@ get_header();
                             </div>
 							<?php
 						}
-						if ( isset( fw_get_db_post_option( $post->ID, 'persons' )[0]['badges']["platinum"] ) ) {
-							echo do_shortcode( '[contact-form-7 id="6113" title="Platinum Practioner Contact Form_copy"]' );
-						} else {
-							echo do_shortcode( '[contact-form-7 id="5056" title="Practioner Contact Form"]' );
+
+						switch ( fw_get_db_post_option( $post->ID, 'form_type' ) ) {
+							case "general":
+								echo do_shortcode( '[contact-form-7 id="5056" title="Practioner Contact Form"]' );
+								break;
+							case "platinum":
+								echo do_shortcode( '[contact-form-7 id="6113" title="Platinum Practioner Contact Form_copy"]' );
+								break;
+							default:
+								echo do_shortcode( '[contact-form-7 id="5056" title="Practioner Contact Form"]' );
 						}
 						echo do_shortcode( '[recommended_by heading="The Somnowell mandibular advancement appliance is also recommended by:" list="‹º›‹²›Sleep Centres‹²›,‹²›ENT Surgeons, Sleep Physicians, Respiratory, Physicians‹²›,‹²›Orthodontists, Dentists‹²›,‹²›General Medical Practitioners‹²›‹¹›" _array_keys="{‹²›list‹²›:‹²›list‹²›}" _fw_coder="aggressive" __fw_editor_shortcodes_id="37c86525a1b15845aba7a392902ae317"][/recommended_by]' );
 						?>

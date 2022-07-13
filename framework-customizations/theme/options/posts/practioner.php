@@ -65,6 +65,14 @@ $options = array(
 				'value' => '',
 				'label' => __( 'Mailing addresses', 'fw' ),
 			),
+			'form_type'       => array(
+				'type'    => 'select',
+				'label'   => __( 'Form type', 'fw' ),
+				'choices' => array(
+					'general'  => 'General Practitioner',
+					'platinum' => 'Platinum Practitioner',
+				)
+			),
 		),
 		'title'   => __( 'Options', '{domain}' ),
 	),
