@@ -49,6 +49,9 @@
     }
     .bottom {
       margin-top: 6rem;
+      .social {
+        padding-top: 2rem;
+      }
     }
     .banner-about {
       margin-top: 8rem;
@@ -156,11 +159,11 @@
     }
     .social {
       a {
-        font-size: rem(80px);
+        font-size: rem(70px);
       }
     }
     .bottom {
-      margin-top: 10rem;
+      margin-top: 11rem;
     }
     .banner-about {
       margin-top: 11rem;
@@ -221,7 +224,7 @@
       text-align: left;
       padding-bottom: 8vw;
       a {
-        font-size: 13vw;
+        font-size: 12vw;
       }
     }
     .banner-about {

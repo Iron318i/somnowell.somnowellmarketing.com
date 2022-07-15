@@ -28,16 +28,21 @@ get_header();
                                     <use xlink:href="#linkdin-icon"></use>
                                 </svg>
                             </a>
-                        </p>
-                        <p>
                             <a href="https://twitter.com/somnowell" target="_blank">
                                 <svg class="icon">
                                     <use xlink:href="#twitter-icon"></use>
                                 </svg>
                             </a>
+                        </p>
+                        <p>
                             <a href="https://www.google.com/+Somnowell" target="_blank">
                                 <svg class="icon">
                                     <use xlink:href="#google-icon"></use>
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@somnowell" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="#tiktok"></use>
                                 </svg>
                             </a>
                         </p>

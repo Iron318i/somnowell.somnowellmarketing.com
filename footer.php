@@ -100,6 +100,13 @@ defined( 'ABSPATH' ) || exit;
                                     </svg>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@somnowell" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="#tiktok"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                         <div class="copyright hide-sm-up mt-1"> © 2018-<?php echo date( "Y" ); ?> Somnowell. All Rights Reserved</div>
                     </div>
