@@ -42,6 +42,7 @@ $options = array(
 		'choices' => array(
 			''          => 'Bold',
 			'fw-normal' => 'Normal',
+			'fw-light'  => 'Light',
 			'fw-black'  => 'Black',
 		)
 	),

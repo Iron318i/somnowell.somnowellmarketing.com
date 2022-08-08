@@ -29,6 +29,20 @@ svg.icon {
   text-transform: uppercase;
   white-space: normal;
 }
+.btn-orange {
+  color: #fff;
+  background-color: #ff9c00;
+  border-color: #ff9c00;
+  font-weight: 700;
+  &:hover {
+    color: #fff;
+    background-color: darken(#ff9c00, 10%);
+    border-color: darken(#ff9c00, 10%);
+  }
+  &.btn-lg {
+    min-width: rem(400px);
+  }
+}
 .home-content .btn,
 .main-content .btn {
   min-width: rem(300px);
@@ -1001,4 +1015,60 @@ textarea.code {
     margin-bottom: .5rem;
     font-weight: 400;
   }
+}
+/*Landing Page*/
+.page-template-landing-page {
+  font-family: 'Montserrat', sans-serif;
+}
+.lp-header {
+  background-color: #1baadf;
+  padding: rem(11px 0);
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .phone {
+    color: #fff;
+    font-size: rem(23px);
+    font-weight: 300;
+  }
+  .lp-logo {
+    display: inline-block;
+    width: rem(487px);
+  }
+}
+#lp-banner {
+  h1 {
+    font-size: rem(36px);
+  }
+  hr {
+    color: #fff;
+    height: 1px;
+    margin: 1.5rem 0;
+  }
+  .styled {
+    li {
+      font-size: rem(17px);
+      font-weight: 600;
+      color: #fff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 440 440' %3E%3Crect x='0' fill='%231baadf' width='440' height='440'/%3E%3Cpath fill='%23fff' d='M174.1,366.4c-3.7,3.8-8.8,5.9-14.1,5.9c-5.3,0-10.4-2.1-14.1-5.9l-113-113c-11.7-11.7-11.7-30.7,0-42.4L47,196.8 c11.7-11.7,30.7-11.7,42.4,0l70.5,70.5L350.5,76.8c11.7-11.7,30.7-11.7,42.4,0l14.1,14.1c11.7,11.7,11.7,30.7,0,42.4L174.1,366.4z' /%3E%3C/svg%3E%0A");
+      background-size: rem(17px);
+      background-position: 0 3px;
+    }
+  }
+  .fw-heading-h4 {
+    padding-left: rem(65px);
+    background: url(../img/banner-icon.png) 0 center / 2.61111rem no-repeat;
+    min-height: rem(47px);
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+  }
+  h4 {
+    font-size: rem(17px);
+    margin-bottom: 0;
+  }
+}
+#lp-contact-us {
+  background-color: #0171ab;
 }

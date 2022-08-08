@@ -111,7 +111,13 @@ $id = str_replace( ' ', '-', $id );
 <<?php echo $type ?><?php echo $id ? ' id="' . $id . '"' : ''; ?> class="content-section<?php echo $custome_class; ?>" <?php if ( $section_style ) {
 	echo 'style="' . $section_style . '"';
 } ?>>
-<div class="row<?php echo $row_class ?>">
-	<?php echo do_shortcode( $content ); ?>
+<?php if ( get_page_template_slug() == "page-templates/landing-page.php" ): ?>
+<div class="container">
+	<?php endif; ?>
+    <div class="row<?php echo $row_class ?>">
+		<?php echo do_shortcode( $content ); ?>
+    </div>
+	<?php if ( get_page_template_slug() == "page-templates/landing-page.php" ): ?>
 </div>
+<?php endif; ?>
 </<?php echo $type ?>>
