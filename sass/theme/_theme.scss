@@ -40,7 +40,7 @@ svg.icon {
     border-color: darken(#ff9c00, 10%);
   }
   &.btn-lg {
-    min-width: rem(400px);
+    min-width: rem(260px);
   }
 }
 .home-content .btn,
@@ -1019,6 +1019,37 @@ textarea.code {
 /*Landing Page*/
 .page-template-landing-page {
   font-family: 'Montserrat', sans-serif;
+  .fw-heading-h2.line {
+    font-size: rem(21px);
+    color: #42505d;
+    text-transform: uppercase;
+    background: none;
+    overflow: hidden;
+    .fw-special-title {
+      display: inline-block;
+      position: relative;
+      background: none;
+    }
+    .fw-special-title:before,
+    .fw-special-title:after {
+      content: "";
+      transform: translateY(-50%);
+      position: absolute;
+      height: 6px;
+      border-bottom: 1px solid #afc9d2;
+      border-top: 1px solid #afc9d2;
+      top: 50%;
+      width: 600px;
+    }
+    .fw-special-title:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    .fw-special-title:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+  }
 }
 .lp-header {
   background-color: #1baadf;
@@ -1038,6 +1069,7 @@ textarea.code {
   }
 }
 #lp-banner {
+  background-position: right;
   h1 {
     font-size: rem(36px);
   }
@@ -1071,4 +1103,17 @@ textarea.code {
 }
 #lp-contact-us {
   background-color: #0171ab;
+}
+#lp-about {
+  background-color: #d7ebf2;
+  h3 {
+    font-size: rem(24px);
+    color: #0171ab;
+    margin-top: 2rem;
+  }
+  .text-block {
+    font-size: 14px;
+    line-height: 2;
+    color: #666666;
+  }
 }

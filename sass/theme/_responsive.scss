@@ -32,6 +32,11 @@
       margin: 0 1rem 1rem 0;
     }
   }
+  .btn-orange {
+    &.btn-lg {
+      min-width: rem(400px);
+    }
+  }
 }
 @include media-breakpoint-up(md) {
   .wrapper {
