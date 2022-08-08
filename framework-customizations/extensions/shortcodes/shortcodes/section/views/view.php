@@ -20,7 +20,7 @@ $custome_class = ( isset( $atts['custome_class'] ) && $atts['custome_class'] ) ?
 $custome_class .= ( isset( $atts['bgc'] ) && $atts['bgc'] ) ? ' ' . $atts['bgc'] . '' : '';
 $row_class     = ( isset( $atts['justify_content'] ) && $atts['justify_content'] ) ? ' ' . $atts['justify_content'] . '' : '';
 $row_class     .= ( isset( $atts['reverse'] ) && $atts['reverse'] ) ? ' ' . $atts['reverse'] . '' : '';
-$row_class     .= ( isset( $atts['gutters'] ) && $atts['gutters'] ) ? ' gx-' . $atts['gutters'] . '' : ' g-0';
+$row_class     .= ( isset( $atts['gutters'] ) && $atts['gutters'] ) ? ' gx-lg-' . $atts['gutters'] . '' : ' g-0';
 $row_class     .= ( isset( $atts['justify_content'] ) && $atts['justify_content'] ) ? ' ' . $atts['justify_content'] . '' : '';
 
 if ( $atts['padding_top'] === $atts['padding_bottom'] ) {

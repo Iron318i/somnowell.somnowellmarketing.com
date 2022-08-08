@@ -1020,12 +1020,12 @@ textarea.code {
 .page-template-landing-page {
   font-family: 'Montserrat', sans-serif;
   .fw-heading-h2.line {
-    font-size: rem(21px);
     color: #42505d;
     text-transform: uppercase;
     background: none;
     overflow: hidden;
     .fw-special-title {
+      font-size: rem(21px);
       display: inline-block;
       position: relative;
       background: none;
@@ -1115,5 +1115,33 @@ textarea.code {
     font-size: 14px;
     line-height: 2;
     color: #666666;
+  }
+}
+#lp-features {
+  .iconic-list {
+    margin-bottom: 0 !important;
+    .item {
+      padding: 0.5rem 0;
+      border: 0 none;
+      .h3 {
+        font-weight: 700;
+        color: #4070a8;
+        font-size: rem(24px);
+      }
+    }
+  }
+}
+#lp-recommended {
+  background-color: #d7ebf2;
+  h4 {
+    color: #0171ab;
+  }
+}
+.as-seen-on {
+  h3 {
+    color: #0171ab;
+  }
+  .text-block em {
+    color: #0171ab;
   }
 }
