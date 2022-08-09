@@ -1101,9 +1101,6 @@ textarea.code {
     margin-bottom: 0;
   }
 }
-#lp-contact-us {
-  background-color: #0171ab;
-}
 #lp-about {
   background-color: #d7ebf2;
   h3 {
@@ -1178,5 +1175,30 @@ textarea.code {
   h3 {
     font-size: rem(36px);
     margin-bottom: 0;
+  }
+}
+#lp-contact-us {
+  background-color: #0171ab;
+  h4 {
+    font-weight: 600;
+    font-size: rem(23px);
+  }
+  .wpcf7 {
+    text-align: center;
+    background-color: #1297cf;
+    padding: rem(40px 25px);
+    color: #fff;
+    .wpcf7-submit {
+      width: 100%;
+    }
+    p {
+      font-size: 13px;
+      a {
+        color: #22c9fd;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
   }
 }

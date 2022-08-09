@@ -95,6 +95,11 @@
       border-left: 1px solid #cae2eb;
     }
   }
+  #lp-contact-us {
+    .wpcf7 {
+      padding: rem(40px 50px);
+    }
+  }
 }
 @include media-breakpoint-up(lg) {
   .hide-lg-up {
