@@ -34,6 +34,7 @@ $options = array(
 			''           => '---',
 			'text-white' => 'White',
 			'text-black' => 'Black',
+			'text-blue'  => 'Blue',
 		)
 	),
 	'heading_weight' => array(

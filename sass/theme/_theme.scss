@@ -1145,3 +1145,38 @@ textarea.code {
     color: #0171ab;
   }
 }
+.text-blue {
+  color: #0171ab;
+}
+#lp-testimonials {
+  .row {
+    justify-content: center;
+  }
+}
+.lp-testimonial {
+  margin-bottom: 2rem;
+  h3 {
+    color: #47cdff;
+    font-weight: 400;
+    strong {
+      color: #0171ab;
+    }
+  }
+  .quote {
+    font-style: italic;
+    color: #0171ab;
+    border-bottom: 1px solid #d7ebf2;
+    padding-bottom: 2rem;
+  }
+}
+#lp-professor {
+  background-size: cover;
+  color: #fff;
+  .img-box {
+    margin-top: rem(-70px);
+  }
+  h3 {
+    font-size: rem(36px);
+    margin-bottom: 0;
+  }
+}
